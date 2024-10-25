@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Hamburger Menu Styling */
+  .hamburger-line {
+    @apply block w-6 h-[2px] bg-[#257BEB] my-1 rounded-full transition-all duration-300 ease-in-out;
+  }
+
+  /* Hamburger icon to close button transition */
+  input:checked ~ .hamburger .line-1 {
+    @apply rotate-45 translate-y-2;
+  }
+  input:checked ~ .hamburger .line-2 {
+    @apply opacity-0;
+  }
+  input:checked ~ .hamburger .line-3 {
+    @apply -rotate-45 -translate-y-2;
+  }
+
+  /* Mobile menu transition */
+  input:checked ~ .nav-menu {
+    @apply max-h-screen;
+  }
+}
+
+/* Hide the hover image initially */
+.logo-container .hover-logo {
+  display: none;
+}
+
+/* Show the hover image on hover, and hide the default logo */
+.logo-container:hover .default-logo {
+  display: none;
+}
+
+.logo-container:hover .hover-logo {
+  display: inline;
+}
+
+/* Style for Swiper buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white; /* Change arrow color to white */
+}
+
+/* Position pagination at the bottom */
+.swiper-pagination {
+  bottom: 0px !important;
+  z-index: 99 !important; /* Adjust this value as needed */
+}
+
+/* Optional: Style pagination bullets */
+.swiper-pagination-bullet {
+  background: #257beb; /* Change bullet color to white */
+  box-shadow: 0 0 10px rgba(109, 168, 255, 0.5);
+  border: 2px solid #257beb2a;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: calc(var(--swiper-navigation-size) / 20 * 27);
+}
+
+/* scroll bar */
+/* width */
+.main-items::-webkit-scrollbar {
+  width: 6px;
+
+  border-radius: 100px;
+}
+
+/* Track */
+.main-items::-webkit-scrollbar-track {
+  background: #d4d2e3;
+  border-radius: 100px;
+}
+
+/* Handle */
+.main-items::-webkit-scrollbar-thumb {
+  background: #257beb;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+.main-items::-webkit-scrollbar-thumb:hover {
+  background: #172c54;
+}

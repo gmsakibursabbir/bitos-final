@@ -1,0 +1,2628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bérlés 02</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body class="font-lexend">
+    <!-- top header start -->
+    <section class="bg-midnightBlue hidden md:block">
+      <div
+        class="h-12 max-w-[1280px] px-5 mx-auto flex justify-start items-center space-x-6"
+      >
+        <a
+          href="tel:+36308830991"
+          class="flex items-center justify-center text-lg text-white leading-6 tracking-wide hover:text-vibrantOrange"
+        >
+          <img src="./img/phone.svg" alt="" class="max-h-5 max-w-5 mr-3" />+36
+          30 883 0991</a
+        >
+        <a
+          href="mailto:berles@biztosraktar.hu"
+          class="flex items-center justify-center text-lg text-white leading-6 tracking-wide hover:text-vibrantOrange"
+          ><img
+            src="./img/envelope.svg"
+            alt=""
+            class="max-h-5 max-w-5 mr-3"
+          />berles@biztosraktar.hu</a
+        >
+        <a
+          href="#"
+          class="flex items-center justify-center text-lg text-white leading-6 tracking-wide hover:text-vibrantOrange"
+          ><img src="./img/clock.svg" alt="" class="max-h-5 max-w-5 mr-3" />H–V:
+          0-24</a
+        >
+      </div>
+    </section>
+    <!-- top header end -->
+    <!-- header start -->
+    <header>
+      <div class="max-w-[1280px] px-5 mx-auto">
+        <nav class="flex justify-between items-center py-4 lg:py-7">
+          <!-- Logo -->
+          <a href="./index.html" class="logo-container">
+            <img
+              src="./img/Logo.svg"
+              alt="Logo"
+              class="default-logo w-[70%] lg:w-[90%] xl:w-full"
+            />
+            <img
+              src="./img/Logo-hover.svg"
+              alt="Hover Logo"
+              class="hover-logo w-[70%] lg:w-[90%] xl:w-full"
+            />
+          </a>
+
+          <!-- Hamburger Menu (mobile) -->
+          <input type="checkbox" id="menu-toggle" class="hidden" />
+          <label for="menu-toggle" class="cursor-pointer block lg:hidden">
+            <div class="hamburger">
+              <span class="hamburger-line line-1"></span>
+              <span class="hamburger-line line-2"></span>
+              <span class="hamburger-line line-3"></span>
+            </div>
+          </label>
+
+          <!-- Menu -->
+          <ul
+            class="nav-menu absolute lg:relative left-0 top-16 md:top-[110px] lg:top-auto lg:bg-transparent bg-white shadow-lg lg:shadow-none w-full lg:w-auto text-center lg:flex lg:space-x-10 transition-all duration-500 ease-in-out max-h-0 overflow-hidden lg:max-h-full text-lg text-mutedPurple font-light leading-wide tracking-wide z-50"
+          >
+            <li
+              class="pt-6 pb-3 lg:py-0 mx-auto group flex justify-center items-center lg:hover:border-b-4 hover:border-skyBlue"
+            >
+              <a href="#" class="block md:inline">Raktárak</a>
+            </li>
+            <li
+              class="pt-3 pb-3 lg:py-0 mx-auto group flex justify-center items-center lg:hover:border-b-4 hover:border-skyBlue"
+            >
+              <a href="#" class="block md:inline">Bérlés</a>
+            </li>
+            <li
+              class="pt-3 pb-3 lg:py-0 mx-auto group flex justify-center items-center lg:hover:border-b-4 hover:border-skyBlue"
+            >
+              <a href="#" class="block md:inline">Kapcsolat</a>
+            </li>
+
+            <li
+              class="pt-3 pb-6 lg:py-0 flex md:flex-row flex-col lg:hidden justify-center gap-3 mx-auto px-5"
+            >
+              <a
+                href="#"
+                class="px-6 h-11 text-base text-skyBlue hover:text-white hover:bg-midnightBlue hover:border-midnightBlue font-medium leading-6 tracking-wide border-skyBlue border-2 rounded-[3px] flex items-center justify-center"
+              >
+                <svg
+                  class="w-4 h-4 mr-3"
+                  viewBox="0 0 16 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="stroke-skyBlue group-hover:stroke-white stroke-2 stroke-round"
+                    d="M11.1248 4.92542C11.1248 6.6513 9.72568 8.05042 7.99979 8.05042C6.2739 8.05042 4.87479 6.6513 4.87479 4.92542C4.87479 3.19953 6.2739 1.80042 7.99979 1.80042C9.72568 1.80042 11.1248 3.19953 11.1248 4.92542Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="stroke-skyBlue group-hover:stroke-white stroke-2 stroke-round"
+                    d="M1.75073 16.6906C1.80932 13.2895 4.58468 10.5504 7.99979 10.5504C11.415 10.5504 14.1904 13.2896 14.2488 16.6909C12.3465 17.5638 10.2301 18.0504 8.00005 18.0504C5.76978 18.0504 3.6532 17.5637 1.75073 16.6906Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                Belépés
+              </a>
+              <a
+                href="#"
+                class="px-6 h-11 text-base text-white hover:text-white hover:bg-midnightBlue hover:border-midbg-midnightBlue font-medium leading-6 tracking-wide bg-skyBlue border-skyBlue border-2 rounded-[3px] flex items-center justify-center"
+              >
+                Regisztráció
+              </a>
+            </li>
+          </ul>
+
+          <div class="hidden lg:flex space-x-6">
+            <a
+              href="#"
+              class="px-6 h-14 text-lg text-white font-semibold leading-6 tracking-wide bg-skyBlue border-skyBlue border-2 rounded-lg flex items-center justify-center hover:text-white hover:bg-midnightBlue hover:border-midnightBlue"
+              ><img src="./img/lcok.svg" alt="" class="max-h-6 max-w-6 mr-2" />
+              Kapunyitás</a
+            >
+            <div class="relative inline-block text-left">
+              <div>
+                <a
+                  href="#"
+                  class="flex items-center justify-center gap-3 rounded-full text-gray-400 hover:text-gray-600"
+                  id="menu-button"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                >
+                  <img
+                    src="./img/avater.png"
+                    alt="Avatar"
+                    class="h-14 w-h-14 rounded-full"
+                  />
+                  <img
+                    src="./img/chevron-up.svg"
+                    alt="Chevron"
+                    class="h-4 w-4 transition-transform duration-200 transform"
+                    id="chevron-icon"
+                  />
+                </a>
+              </div>
+
+              <!-- Dropdown menu -->
+              <!-- Dropdown menu -->
+              <div
+                class="hidden absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="menu-button"
+                tabindex="1"
+                id="dropdown-menu"
+              >
+                <div class="py-1" role="none">
+                  <a
+                    href="#"
+                    class="flex justify-center items-center px-4 py-3 text-lg text-deepGray font-regular group hover:text-skyBlue"
+                    id="menu-item-0"
+                  >
+                    <svg
+                      class="w-4 h-4 mr-2"
+                      viewBox="0 0 18 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="stroke-mutedPurple group-hover:stroke-skyBlue stroke-[1.5] stroke-round"
+                        d="M8.51613 12.1411L13.375 17C14.2379 17.8629 15.6371 17.8629 16.5 17C17.3629 16.1371 17.3629 14.7379 16.5 13.875L11.6027 8.97774M8.51613 12.1411L10.5962 9.61529C10.8596 9.29551 11.2118 9.09433 11.6027 8.97774M8.51613 12.1411L4.63693 16.8516C4.23364 17.3413 3.63247 17.625 2.99807 17.625C1.82553 17.625 0.875 16.6745 0.875 15.5019C0.875 14.8675 1.1587 14.2664 1.64842 13.8631L7.34551 9.17134M11.6027 8.97774C12.0606 8.84119 12.5715 8.82067 13.0549 8.86153C13.1604 8.87045 13.2672 8.875 13.375 8.875C15.4461 8.875 17.125 7.19607 17.125 5.125C17.125 4.57478 17.0065 4.05223 16.7936 3.58149L14.0635 6.31164C13.1338 6.09821 12.4019 5.36636 12.1885 4.43664L14.9187 1.70645C14.4479 1.49353 13.9253 1.375 13.375 1.375C11.3039 1.375 9.625 3.05393 9.625 5.125C9.625 5.23282 9.62955 5.33958 9.63847 5.44509C9.71423 6.3413 9.57899 7.33201 8.88471 7.90377L8.79965 7.97382M7.34551 9.17134L3.92417 5.75H2.75L0.875 2.625L2.125 1.375L5.25 3.25V4.42417L8.79965 7.97382M7.34551 9.17134L8.79965 7.97382M14.3125 14.8125L12.125 12.625M3.05603 15.4375H3.06228V15.4438H3.05603V15.4375Z"
+                      />
+                    </svg>
+                    Beállítások
+                  </a>
+                  <a
+                    href="#"
+                    class="flex justify-center items-center px-4 py-3 text-lg text-deepGray font-regular hover:text-skyBlue"
+                    id="menu-item-1"
+                    ><svg
+                      class="w-4 h-4 mr-2"
+                      viewBox="0 0 20 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="fill-mutedPurple group-hover:fill-skyBlue"
+                        d="M10 0.59375L10.2812 0.709375L19.5312 4.45938L20 4.65V5.15625V15.6563V16.4063H18.5V15.6563V5.6625L10 2.2125L1.5 5.65938V15.6531V16.4031H0V15.6531V5.15313V4.64688L0.46875 4.45625L9.71875 0.709375L10 0.59375ZM3 6.40313H3.75H16.25H17V7.15313V15.6531V16.4031H16.25H3.75H3V15.6531V7.15313V6.40313ZM4.5 14.9031H15.5V13.6531H4.5V14.9031ZM4.5 12.1531H15.5V10.6531H4.5V12.1531ZM4.5 9.15313H15.5V7.90313H4.5V9.15313Z"
+                      />
+                    </svg>
+                    Raktáraim
+                  </a>
+                  <a
+                    href="#"
+                    class="flex justify-center items-center px-4 py-3 text-lg text-deepGray font-regular hover:text-skyBlue"
+                    id="menu-item-2"
+                    ><svg
+                      class="w-4 h-4 mr-2"
+                      viewBox="0 0 20 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="stroke-mutedPurple group-hover:stroke-skyBlue stroke-[1.5] stroke-round"
+                        d="M11.25 7.67542V4.55042C11.25 2.47935 12.9289 0.800415 15 0.800415C17.0711 0.800415 18.75 2.47935 18.75 4.55042V7.67542M3.125 17.0504H11.875C12.9105 17.0504 13.75 16.2109 13.75 15.1754V9.55042C13.75 8.51488 12.9105 7.67542 11.875 7.67542H3.125C2.08947 7.67542 1.25 8.51488 1.25 9.55042V15.1754C1.25 16.2109 2.08947 17.0504 3.125 17.0504Z"
+                      />
+                    </svg>
+                    Kapunyitás
+                  </a>
+                  <form
+                    method="POST"
+                    action="#"
+                    role="none"
+                    class="border-t-[1px] border-lavenderGray"
+                  >
+                    <button
+                      type="submit"
+                      class="flex justify-center items-center px-4 py-3 text-lg text-deepGray font-regular w-full borde"
+                      role="menuitem"
+                      id="menu-item-3"
+                    >
+                      Kijelentkezés
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+      <!-- choose start -->
+      <section class="relative" id="chooseTwo">
+        <div class="absolute left-0 top-0">
+          <img src="./img/shadow8.svg" alt="" />
+        </div>
+        <div class="absolute right-0 top-1/2">
+          <img src="./img/shadow9.svg" alt="" />
+        </div>
+        <div class="absolute right-0 -top-30">
+          <img src="./img/rent-2-bellow-shadow.svg" alt="" />
+        </div>
+        <div
+          class="max-w-[1280px] px-5 mx-auto py-8 lg:py-16 text-center relative z-20"
+        >
+          <!-- steps -->
+          <div
+            class="flex flex-row justify-between items-center mx-auto max-w-[370px] gap-[18px]"
+          >
+            <div
+              class="text-lg font-bold min-w-[34px] min-h-[34px] flex justify-center items-center bg-skyBlue text-white rounded-full"
+            >
+              1
+            </div>
+
+            <!-- line -->
+            <div class="w-full h-[6px] rounded-full bg-skyBlue"></div>
+
+            <div
+              class="text-lg font-bold min-w-[34px] min-h-[34px] flex justify-center items-center bg-skyBlue text-white rounded-full"
+            >
+              2
+            </div>
+
+            <!-- line -->
+            <div class="relative w-full h-[6px] rounded-full bg-pearlGray">
+              <div
+                class="absolute top-0 left-0 w-1/2 h-full bg-skyBlue rounded-full"
+              ></div>
+            </div>
+
+            <div
+              class="text-lg font-bold min-w-[34px] min-h-[34px] flex justify-center items-center bg-pearlGray text-mutedPurple rounded-full"
+            >
+              3
+            </div>
+          </div>
+          <!-- text -->
+          <div class="pt-6 pb-8 lg:pt-12 lg:pb-16">
+            <h2
+              class="mx-auto text-2xl lg:text-[44px] font-semibold text-deepGray leading-tight tracking-wide text-center pb-3"
+            >
+              Válasszon
+              <span class="text-skyBlue">Raktárat!</span>
+            </h2>
+            <p
+              class="max-w-[828px] mx-auto text-base lg:text-lg font-normal text-mutedPurple leading-normal tracking-wide text-center"
+            >
+              Azért, hogy könnyen megtalálja és kiválaszthassa az Önnek
+              leginkább megfelelő raktárat, használja a raktárválasztó térképet
+              a szabad konténerek megtekintéséhez.
+            </p>
+          </div>
+          <!-- Tab Navigation -->
+          <div
+            class="flex justify-center items-center gap-2 lg:gap-6"
+            id="tab-navigation-2"
+          >
+            <button
+              class="flex flex-col lg:flex-row justify-center items-center p-3 lg:p-6 rounded-[10px] border-[2px] border-transparent shadow-[0_0_0_4px] shadow-skyBlue transition duration-300 gap-4 active-tab bg-white"
+              data-tab="tab3-content"
+            >
+              <img src="./img/cw-01.svg" alt="" />
+              <div class="text-center lg:text-start">
+                <h3 class="text-base text-deepGray font-bold">10 lábas</h3>
+                <p class="text-sm text-mutedPurple font-medium">
+                  7 m<sup>2</sup>
+                </p>
+              </div>
+            </button>
+
+            <button
+              class="flex flex-col lg:flex-row justify-center items-center p-3 lg:p-6 rounded-[10px] border-[2px] border-pearlGray shadow-none transition duration-300 gap-4 bg-white"
+              data-tab="tab4-content"
+            >
+              <img src="./img/cw-02.svg" alt="" />
+              <div class="text-center lg:text-start">
+                <h3 class="text-base text-deepGray font-bold">20 lábas</h3>
+                <p class="text-sm text-mutedPurple font-medium">
+                  15 m<sup>2</sup>
+                </p>
+              </div>
+            </button>
+
+            <button
+              class="flex flex-col lg:flex-row justify-center items-center p-3 lg:p-6 rounded-[10px] border-[2px] border-pearlGray shadow-none transition duration-300 gap-4 bg-white"
+              data-tab="tab5-content"
+            >
+              <img src="./img/cw-02.svg" alt="" />
+              <div class="text-center lg:text-start">
+                <h3 class="text-base text-deepGray font-bold">40 lábas</h3>
+                <p class="text-sm text-mutedPurple font-medium">
+                  30 m<sup>2</sup>
+                </p>
+              </div>
+            </button>
+          </div>
+          <!-- tab content -->
+          <div class="mt-10 lg:mt-20">
+            <div id="tab3-content" class="tab-contentx">
+              <div
+                class="flex flex-col lg:flex-row justify-between items-center gap-8"
+              >
+                <div
+                  class="w-full xl:w-[40%] bg-white border border-lavenderGray rounded-3xl"
+                >
+                  <img src="./img/rent-maps.png" alt="" class="w-full h-full" />
+                </div>
+                <div class="w-full xl:w-[60%]">
+                  <ul
+                    class="space-y-4 max-h-[400px] overflow-y-auto overflow-x-hidden p-6 main-items"
+                  >
+                    <!-- item -01 -->
+                    <li
+                      class="flex flex-col md:flex-row justify-between items-center px-6 py-5 rounded-3xl shadow-lg border-[3px] border-white hover:border-skyBlue bg-white"
+                    >
+                      <!-- 1 -->
+                      <div class="text-start hidden md:inline-block">
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          R01
+                        </h4>
+                        <p
+                          class="text-sm md:text-base text-mutedPurple font-medium"
+                        >
+                          <span
+                            class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                          ></span>
+                          10 lábas raktár
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <h4
+                        class="text-xl md:text-2xl text-deepGray font-medium hidden md:inline-block"
+                      >
+                        7 m<sup>2</sup>
+                      </h4>
+                      <!-- md 1 -->
+                      <div
+                        class="flex md:hidden flex-row justify-between items-center w-full"
+                      >
+                        <!-- 1 -->
+                        <div class="text-start">
+                          <h4
+                            class="text-xl md:text-2xl text-deepGray font-medium"
+                          >
+                            R01
+                          </h4>
+                          <p
+                            class="text-sm md:text-base text-mutedPurple font-medium"
+                          >
+                            <span
+                              class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                            ></span>
+                            10 lábas raktár
+                          </p>
+                        </div>
+                        <!-- 2 -->
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          7 m<sup>2</sup>
+                        </h4>
+                      </div>
+                      <!-- 3 -->
+                      <div class="text-start hidden md:inline-block">
+                        <div class="flex flex-row justify-start items-center">
+                          <h4
+                            class="text-base md:text-lg text-deepGray font-medium"
+                          >
+                            25.000 Ft
+                          </h4>
+                          <sup>Ft</sup>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + áfa/hó
+                          </p>
+                        </div>
+                        <p class="text-sm text-mutedPurple font-light">
+                          + kaució
+                        </p>
+                      </div>
+                      <!-- 4 -->
+                      <a
+                        href="#"
+                        class="text-base text-white bg-skyBlue font-bold w-[135px] h-[45px] hidden md:flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                        >Ezt bérelném</a
+                      >
+                      <!-- md 2 -->
+                      <div class="flex md:hidden flex-col w-full">
+                        <!-- 3 -->
+                        <div class="text-start inline-block md:hidden py-4">
+                          <div class="flex flex-row justify-start items-center">
+                            <h4
+                              class="text-base md:text-lg text-deepGray font-medium"
+                            >
+                              25.000 Ft
+                            </h4>
+                            <sup>Ft</sup>
+                            <p class="text-sm text-mutedPurple font-light">
+                              + áfa/hó
+                            </p>
+                          </div>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + kaució
+                          </p>
+                        </div>
+                        <!-- 4 -->
+                        <a
+                          href="#"
+                          class="text-base text-white bg-skyBlue font-bold w-full md:w-[135px] h-[45px] md:hidden flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                          >Ezt bérelném</a
+                        >
+                      </div>
+                    </li>
+                    <!-- item -02 -->
+                    <li
+                      class="flex flex-col md:flex-row justify-between items-center px-6 py-5 rounded-3xl shadow-lg border-[3px] border-white hover:border-skyBlue bg-white"
+                    >
+                      <!-- 1 -->
+                      <div class="text-start hidden md:inline-block">
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          R02
+                        </h4>
+                        <p
+                          class="text-sm md:text-base text-mutedPurple font-medium"
+                        >
+                          <span
+                            class="w-[10px] h-[10px] bg-skyBlue rounded-full inline-block mr-[5px]"
+                          ></span>
+                          10 lábas raktár
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <h4
+                        class="text-xl md:text-2xl text-deepGray font-medium hidden md:inline-block"
+                      >
+                        7 m<sup>2</sup>
+                      </h4>
+                      <!-- md 1 -->
+                      <div
+                        class="flex md:hidden flex-row justify-between items-center w-full"
+                      >
+                        <!-- 1 -->
+                        <div class="text-start">
+                          <h4
+                            class="text-xl md:text-2xl text-deepGray font-medium"
+                          >
+                            R02
+                          </h4>
+                          <p
+                            class="text-sm md:text-base text-mutedPurple font-medium"
+                          >
+                            <span
+                              class="w-[10px] h-[10px] bg-skyBlue rounded-full inline-block mr-[5px]"
+                            ></span>
+                            10 lábas raktár
+                          </p>
+                        </div>
+                        <!-- 2 -->
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          7 m<sup>2</sup>
+                        </h4>
+                      </div>
+                      <!-- 3 -->
+                      <div class="text-start hidden md:inline-block">
+                        <div class="flex flex-row justify-start items-center">
+                          <h4
+                            class="text-base md:text-lg text-deepGray font-medium"
+                          >
+                            25.000 Ft
+                          </h4>
+                          <sup>Ft</sup>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + áfa/hó
+                          </p>
+                        </div>
+                        <p class="text-sm text-mutedPurple font-light">
+                          + kaució
+                        </p>
+                      </div>
+                      <!-- 4 -->
+                      <a
+                        href="#"
+                        class="text-base text-white bg-skyBlue font-bold w-[135px] h-[45px] hidden md:flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                        >Törlés</a
+                      >
+                      <!-- md 2 -->
+                      <div class="flex md:hidden flex-col w-full">
+                        <!-- 3 -->
+                        <div class="text-start inline-block md:hidden py-4">
+                          <div class="flex flex-row justify-start items-center">
+                            <h4
+                              class="text-base md:text-lg text-deepGray font-medium"
+                            >
+                              25.000 Ft
+                            </h4>
+                            <sup>Ft</sup>
+                            <p class="text-sm text-mutedPurple font-light">
+                              + áfa/hó
+                            </p>
+                          </div>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + kaució
+                          </p>
+                        </div>
+                        <!-- 4 -->
+                        <a
+                          href="#"
+                          class="text-base text-white bg-skyBlue font-bold w-full h-[45px] flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                          >Törlés</a
+                        >
+                      </div>
+                    </li>
+                    <!-- item -03 -->
+
+                    <li
+                      class="flex flex-col md:flex-row justify-between items-center px-6 py-5 rounded-3xl shadow-lg border-[3px] border-white hover:border-skyBlue bg-white"
+                    >
+                      <!-- 1 -->
+                      <div class="text-start hidden md:inline-block">
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          R03
+                        </h4>
+                        <p
+                          class="text-sm md:text-base text-mutedPurple font-medium"
+                        >
+                          <span
+                            class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                          ></span>
+                          10 lábas raktár
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <h4
+                        class="text-xl md:text-2xl text-deepGray font-medium hidden md:inline-block"
+                      >
+                        7 m<sup>2</sup>
+                      </h4>
+                      <!-- md 1 -->
+                      <div
+                        class="flex md:hidden flex-row justify-between items-center w-full"
+                      >
+                        <!-- 1 -->
+                        <div class="text-start">
+                          <h4
+                            class="text-xl md:text-2xl text-deepGray font-medium"
+                          >
+                            R03
+                          </h4>
+                          <p
+                            class="text-sm md:text-base text-mutedPurple font-medium"
+                          >
+                            <span
+                              class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                            ></span>
+                            10 lábas raktár
+                          </p>
+                        </div>
+                        <!-- 2 -->
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          7 m<sup>2</sup>
+                        </h4>
+                      </div>
+                      <!-- 3 -->
+                      <div class="text-start hidden md:inline-block">
+                        <div class="flex flex-row justify-start items-center">
+                          <h4
+                            class="text-base md:text-lg text-deepGray font-medium"
+                          >
+                            25.000 Ft
+                          </h4>
+                          <sup>Ft</sup>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + áfa/hó
+                          </p>
+                        </div>
+                        <p class="text-sm text-mutedPurple font-light">
+                          + kaució
+                        </p>
+                      </div>
+                      <!-- 4 -->
+                      <a
+                        href="#"
+                        class="text-base text-white bg-skyBlue font-bold w-[135px] h-[45px] hidden md:flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                        >Ezt bérelném</a
+                      >
+                      <!-- md 2 -->
+                      <div class="flex md:hidden flex-col w-full">
+                        <!-- 3 -->
+                        <div class="text-start inline-block md:hidden py-4">
+                          <div class="flex flex-row justify-start items-center">
+                            <h4
+                              class="text-base md:text-lg text-deepGray font-medium"
+                            >
+                              25.000 Ft
+                            </h4>
+                            <sup>Ft</sup>
+                            <p class="text-sm text-mutedPurple font-light">
+                              + áfa/hó
+                            </p>
+                          </div>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + kaució
+                          </p>
+                        </div>
+                        <!-- 4 -->
+                        <a
+                          href="#"
+                          class="text-base text-white bg-skyBlue font-bold w-full md:w-[135px] h-[45px] md:hidden flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                          >Ezt bérelném</a
+                        >
+                      </div>
+                    </li>
+                    <!-- item -04 -->
+                    <li
+                      class="flex flex-col md:flex-row justify-between items-center px-6 py-5 rounded-3xl shadow-lg border-[3px] border-white hover:border-skyBlue bg-white"
+                    >
+                      <!-- 1 -->
+                      <div class="text-start hidden md:inline-block">
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          R04
+                        </h4>
+                        <p
+                          class="text-sm md:text-base text-mutedPurple font-medium"
+                        >
+                          <span
+                            class="w-[10px] h-[10px] bg-mutedLavender rounded-full inline-block mr-[5px]"
+                          ></span>
+                          10 lábas raktár
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <h4
+                        class="text-xl md:text-2xl text-deepGray font-medium hidden md:inline-block"
+                      >
+                        7 m<sup>2</sup>
+                      </h4>
+                      <!-- md 1 -->
+                      <div
+                        class="flex md:hidden flex-row justify-between items-center w-full"
+                      >
+                        <!-- 1 -->
+                        <div class="text-start">
+                          <h4
+                            class="text-xl md:text-2xl text-deepGray font-medium"
+                          >
+                            R04
+                          </h4>
+                          <p
+                            class="text-sm md:text-base text-mutedPurple font-medium"
+                          >
+                            <span
+                              class="w-[10px] h-[10px] bg-mutedLavender rounded-full inline-block mr-[5px]"
+                            ></span>
+                            10 lábas raktár
+                          </p>
+                        </div>
+                        <!-- 2 -->
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          7 m<sup>2</sup>
+                        </h4>
+                      </div>
+                      <!-- 3 -->
+                      <div class="text-start hidden md:inline-block">
+                        <div class="flex flex-row justify-start items-center">
+                          <h4
+                            class="text-base md:text-lg text-deepGray font-medium"
+                          >
+                            25.000 Ft
+                          </h4>
+                          <sup>Ft</sup>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + áfa/hó
+                          </p>
+                        </div>
+                        <p class="text-sm text-mutedPurple font-light">
+                          + kaució
+                        </p>
+                      </div>
+                      <!-- 4 -->
+                      <a
+                        href="#"
+                        class="text-base text-skyBlue bg-white font-bold w-[135px] h-[45px] hidden md:flex justify-center items-center border-[2px] border-lavenderGray hover:bg-skyBlue hover:text-white hover:border-skyBlue rounded-[3px] group"
+                        ><svg
+                          class="w-5 h-5 mr-2"
+                          viewBox="0 0 20 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="fill-[#257BEB] group-hover:fill-white"
+                            d="M4.21444 3.57765C4.47824 3.2583 4.43321 2.78557 4.11386 2.52177C3.79452 2.25797 3.32178 2.303 3.05798 2.62234C2.1587 3.71097 1.50992 5.01576 1.20153 6.44786C1.11433 6.85279 1.37191 7.25174 1.77684 7.33894C2.18177 7.42614 2.58072 7.16857 2.66792 6.76364C2.92443 5.57244 3.46427 4.48577 4.21444 3.57765Z"
+                          />
+                          <path
+                            class="fill-[#257BEB] group-hover:fill-white"
+                            d="M16.9417 2.62234C16.6779 2.303 16.2051 2.25797 15.8858 2.52177C15.5664 2.78557 15.5214 3.2583 15.7852 3.57765C16.5354 4.48577 17.0752 5.57244 17.3317 6.76364C17.4189 7.16857 17.8179 7.42614 18.2228 7.33894C18.6277 7.25174 18.8853 6.85279 18.7981 6.44786C18.4897 5.01576 17.8409 3.71097 16.9417 2.62234Z"
+                          />
+                          <path
+                            class="fill-[#257BEB] group-hover:fill-white"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M9.99997 2.35083C6.68626 2.35083 3.99997 5.03712 3.99997 8.35083C3.99997 10.2375 3.54624 12.0159 2.7426 13.5851C2.63591 13.7935 2.6326 14.0397 2.73365 14.2508C2.83469 14.4619 3.02851 14.6138 3.25769 14.6613C4.32537 14.883 5.41181 15.0531 6.51426 15.1689C6.67494 16.9528 8.17421 18.3508 10 18.3508C11.8258 18.3508 13.3251 16.9528 13.4857 15.1689C14.5882 15.0531 15.6746 14.883 16.7422 14.6613C16.9714 14.6138 17.1652 14.4619 17.2663 14.2508C17.3673 14.0397 17.364 13.7935 17.2573 13.5851C16.4537 12.0159 16 10.2375 16 8.35083C16 5.03712 13.3137 2.35083 9.99997 2.35083ZM10 16.8508C9.04777 16.8508 8.25097 16.1854 8.0493 15.2941C8.69477 15.3317 9.34517 15.3508 9.99997 15.3508C10.6548 15.3508 11.3052 15.3317 11.9507 15.2941C11.749 16.1854 10.9522 16.8508 10 16.8508Z"
+                          />
+                        </svg>
+                        Értesíts</a
+                      >
+                      <!-- md 2 -->
+                      <div class="flex md:hidden flex-col w-full">
+                        <!-- 3 -->
+                        <div class="text-start inline-block md:hidden py-4">
+                          <div class="flex flex-row justify-start items-center">
+                            <h4
+                              class="text-base md:text-lg text-deepGray font-medium"
+                            >
+                              25.000 Ft
+                            </h4>
+                            <sup>Ft</sup>
+                            <p class="text-sm text-mutedPurple font-light">
+                              + áfa/hó
+                            </p>
+                          </div>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + kaució
+                          </p>
+                        </div>
+                        <!-- 4 -->
+                        <a
+                          href="#"
+                          class="text-base text-skyBlue bg-white font-bold w-full h-[45px] flex justify-center items-center border-[2px] border-lavenderGray hover:bg-skyBlue hover:text-white hover:border-skyBlue rounded-[3px] group"
+                          ><svg
+                            class="w-5 h-5 mr-2"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              class="fill-[#257BEB] group-hover:fill-white"
+                              d="M4.21444 3.57765C4.47824 3.2583 4.43321 2.78557 4.11386 2.52177C3.79452 2.25797 3.32178 2.303 3.05798 2.62234C2.1587 3.71097 1.50992 5.01576 1.20153 6.44786C1.11433 6.85279 1.37191 7.25174 1.77684 7.33894C2.18177 7.42614 2.58072 7.16857 2.66792 6.76364C2.92443 5.57244 3.46427 4.48577 4.21444 3.57765Z"
+                            />
+                            <path
+                              class="fill-[#257BEB] group-hover:fill-white"
+                              d="M16.9417 2.62234C16.6779 2.303 16.2051 2.25797 15.8858 2.52177C15.5664 2.78557 15.5214 3.2583 15.7852 3.57765C16.5354 4.48577 17.0752 5.57244 17.3317 6.76364C17.4189 7.16857 17.8179 7.42614 18.2228 7.33894C18.6277 7.25174 18.8853 6.85279 18.7981 6.44786C18.4897 5.01576 17.8409 3.71097 16.9417 2.62234Z"
+                            />
+                            <path
+                              class="fill-[#257BEB] group-hover:fill-white"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M9.99997 2.35083C6.68626 2.35083 3.99997 5.03712 3.99997 8.35083C3.99997 10.2375 3.54624 12.0159 2.7426 13.5851C2.63591 13.7935 2.6326 14.0397 2.73365 14.2508C2.83469 14.4619 3.02851 14.6138 3.25769 14.6613C4.32537 14.883 5.41181 15.0531 6.51426 15.1689C6.67494 16.9528 8.17421 18.3508 10 18.3508C11.8258 18.3508 13.3251 16.9528 13.4857 15.1689C14.5882 15.0531 15.6746 14.883 16.7422 14.6613C16.9714 14.6138 17.1652 14.4619 17.2663 14.2508C17.3673 14.0397 17.364 13.7935 17.2573 13.5851C16.4537 12.0159 16 10.2375 16 8.35083C16 5.03712 13.3137 2.35083 9.99997 2.35083ZM10 16.8508C9.04777 16.8508 8.25097 16.1854 8.0493 15.2941C8.69477 15.3317 9.34517 15.3508 9.99997 15.3508C10.6548 15.3508 11.3052 15.3317 11.9507 15.2941C11.749 16.1854 10.9522 16.8508 10 16.8508Z"
+                            />
+                          </svg>
+                          Értesíts</a
+                        >
+                      </div>
+                    </li>
+                    <!-- item -05 -->
+                    <li
+                      class="flex flex-col md:flex-row justify-between items-center px-6 py-5 rounded-3xl shadow-lg border-[3px] border-white hover:border-skyBlue bg-white"
+                    >
+                      <!-- 1 -->
+                      <div class="text-start hidden md:inline-block">
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          R05
+                        </h4>
+                        <p
+                          class="text-sm md:text-base text-mutedPurple font-medium"
+                        >
+                          <span
+                            class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                          ></span>
+                          10 lábas raktár
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <h4
+                        class="text-xl md:text-2xl text-deepGray font-medium hidden md:inline-block"
+                      >
+                        7 m<sup>2</sup>
+                      </h4>
+                      <!-- md 1 -->
+                      <div
+                        class="flex md:hidden flex-row justify-between items-center w-full"
+                      >
+                        <!-- 1 -->
+                        <div class="text-start">
+                          <h4
+                            class="text-xl md:text-2xl text-deepGray font-medium"
+                          >
+                            R05
+                          </h4>
+                          <p
+                            class="text-sm md:text-base text-mutedPurple font-medium"
+                          >
+                            <span
+                              class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                            ></span>
+                            10 lábas raktár
+                          </p>
+                        </div>
+                        <!-- 2 -->
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          7 m<sup>2</sup>
+                        </h4>
+                      </div>
+                      <!-- 3 -->
+                      <div class="text-start hidden md:inline-block">
+                        <div class="flex flex-row justify-start items-center">
+                          <h4
+                            class="text-base md:text-lg text-deepGray font-medium"
+                          >
+                            25.000 Ft
+                          </h4>
+                          <sup>Ft</sup>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + áfa/hó
+                          </p>
+                        </div>
+                        <p class="text-sm text-mutedPurple font-light">
+                          + kaució
+                        </p>
+                      </div>
+                      <!-- 4 -->
+                      <a
+                        href="#"
+                        class="text-base text-white bg-skyBlue font-bold w-[135px] h-[45px] hidden md:flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                        >Ezt bérelném</a
+                      >
+                      <!-- md 2 -->
+                      <div class="flex md:hidden flex-col w-full">
+                        <!-- 3 -->
+                        <div class="text-start inline-block md:hidden py-4">
+                          <div class="flex flex-row justify-start items-center">
+                            <h4
+                              class="text-base md:text-lg text-deepGray font-medium"
+                            >
+                              25.000 Ft
+                            </h4>
+                            <sup>Ft</sup>
+                            <p class="text-sm text-mutedPurple font-light">
+                              + áfa/hó
+                            </p>
+                          </div>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + kaució
+                          </p>
+                        </div>
+                        <!-- 4 -->
+                        <a
+                          href="#"
+                          class="text-base text-white bg-skyBlue font-bold w-full md:w-[135px] h-[45px] md:hidden flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                          >Ezt bérelném</a
+                        >
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div id="tab4-content" class="tab-contentx hidden">
+              <div
+                class="flex flex-col lg:flex-row justify-between items-center gap-8"
+              >
+                <div
+                  class="w-full xl:w-[40%] bg-white border border-lavenderGray rounded-3xl"
+                >
+                  <img src="./img/rent-maps.png" alt="" class="w-full h-full" />
+                </div>
+                <div class="w-full xl:w-[60%]">
+                  <ul
+                    class="space-y-4 max-h-[400px] overflow-y-auto overflow-x-hidden p-6 main-items"
+                  >
+                    <!-- item -01 -->
+                    <li
+                      class="flex flex-col md:flex-row justify-between items-center px-6 py-5 rounded-3xl shadow-lg border-[3px] border-white hover:border-skyBlue bg-white"
+                    >
+                      <!-- 1 -->
+                      <div class="text-start hidden md:inline-block">
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          R01
+                        </h4>
+                        <p
+                          class="text-sm md:text-base text-mutedPurple font-medium"
+                        >
+                          <span
+                            class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                          ></span>
+                          20 lábas raktár
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <h4
+                        class="text-xl md:text-2xl text-deepGray font-medium hidden md:inline-block"
+                      >
+                        15 m<sup>2</sup>
+                      </h4>
+                      <!-- md 1 -->
+                      <div
+                        class="flex md:hidden flex-row justify-between items-center w-full"
+                      >
+                        <!-- 1 -->
+                        <div class="text-start">
+                          <h4
+                            class="text-xl md:text-2xl text-deepGray font-medium"
+                          >
+                            R01
+                          </h4>
+                          <p
+                            class="text-sm md:text-base text-mutedPurple font-medium"
+                          >
+                            <span
+                              class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                            ></span>
+                            20 lábas raktár
+                          </p>
+                        </div>
+                        <!-- 2 -->
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          15 m<sup>2</sup>
+                        </h4>
+                      </div>
+                      <!-- 3 -->
+                      <div class="text-start hidden md:inline-block">
+                        <div class="flex flex-row justify-start items-center">
+                          <h4
+                            class="text-base md:text-lg text-deepGray font-medium"
+                          >
+                            25.000 Ft
+                          </h4>
+                          <sup>Ft</sup>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + áfa/hó
+                          </p>
+                        </div>
+                        <p class="text-sm text-mutedPurple font-light">
+                          + kaució
+                        </p>
+                      </div>
+                      <!-- 4 -->
+                      <a
+                        href="#"
+                        class="text-base text-white bg-skyBlue font-bold w-[135px] h-[45px] hidden md:flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                        >Ezt bérelném</a
+                      >
+                      <!-- md 2 -->
+                      <div class="flex md:hidden flex-col w-full">
+                        <!-- 3 -->
+                        <div class="text-start inline-block md:hidden py-4">
+                          <div class="flex flex-row justify-start items-center">
+                            <h4
+                              class="text-base md:text-lg text-deepGray font-medium"
+                            >
+                              25.000 Ft
+                            </h4>
+                            <sup>Ft</sup>
+                            <p class="text-sm text-mutedPurple font-light">
+                              + áfa/hó
+                            </p>
+                          </div>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + kaució
+                          </p>
+                        </div>
+                        <!-- 4 -->
+                        <a
+                          href="#"
+                          class="text-base text-white bg-skyBlue font-bold w-full md:w-[135px] h-[45px] md:hidden flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                          >Ezt bérelném</a
+                        >
+                      </div>
+                    </li>
+                    <!-- item -02 -->
+                    <li
+                      class="flex flex-col md:flex-row justify-between items-center px-6 py-5 rounded-3xl shadow-lg border-[3px] border-white hover:border-skyBlue bg-white"
+                    >
+                      <!-- 1 -->
+                      <div class="text-start hidden md:inline-block">
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          R02
+                        </h4>
+                        <p
+                          class="text-sm md:text-base text-mutedPurple font-medium"
+                        >
+                          <span
+                            class="w-[10px] h-[10px] bg-skyBlue rounded-full inline-block mr-[5px]"
+                          ></span>
+                          20 lábas raktár
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <h4
+                        class="text-xl md:text-2xl text-deepGray font-medium hidden md:inline-block"
+                      >
+                        15 m<sup>2</sup>
+                      </h4>
+                      <!-- md 1 -->
+                      <div
+                        class="flex md:hidden flex-row justify-between items-center w-full"
+                      >
+                        <!-- 1 -->
+                        <div class="text-start">
+                          <h4
+                            class="text-xl md:text-2xl text-deepGray font-medium"
+                          >
+                            R02
+                          </h4>
+                          <p
+                            class="text-sm md:text-base text-mutedPurple font-medium"
+                          >
+                            <span
+                              class="w-[10px] h-[10px] bg-skyBlue rounded-full inline-block mr-[5px]"
+                            ></span>
+                            20 lábas raktár
+                          </p>
+                        </div>
+                        <!-- 2 -->
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          15 m<sup>2</sup>
+                        </h4>
+                      </div>
+                      <!-- 3 -->
+                      <div class="text-start hidden md:inline-block">
+                        <div class="flex flex-row justify-start items-center">
+                          <h4
+                            class="text-base md:text-lg text-deepGray font-medium"
+                          >
+                            25.000 Ft
+                          </h4>
+                          <sup>Ft</sup>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + áfa/hó
+                          </p>
+                        </div>
+                        <p class="text-sm text-mutedPurple font-light">
+                          + kaució
+                        </p>
+                      </div>
+                      <!-- 4 -->
+                      <a
+                        href="#"
+                        class="text-base text-white bg-skyBlue font-bold w-[135px] h-[45px] hidden md:flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                        >Törlés</a
+                      >
+                      <!-- md 2 -->
+                      <div class="flex md:hidden flex-col w-full">
+                        <!-- 3 -->
+                        <div class="text-start inline-block md:hidden py-4">
+                          <div class="flex flex-row justify-start items-center">
+                            <h4
+                              class="text-base md:text-lg text-deepGray font-medium"
+                            >
+                              25.000 Ft
+                            </h4>
+                            <sup>Ft</sup>
+                            <p class="text-sm text-mutedPurple font-light">
+                              + áfa/hó
+                            </p>
+                          </div>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + kaució
+                          </p>
+                        </div>
+                        <!-- 4 -->
+                        <a
+                          href="#"
+                          class="text-base text-white bg-skyBlue font-bold w-full h-[45px] flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                          >Törlés</a
+                        >
+                      </div>
+                    </li>
+                    <!-- item -03 -->
+
+                    <li
+                      class="flex flex-col md:flex-row justify-between items-center px-6 py-5 rounded-3xl shadow-lg border-[3px] border-white hover:border-skyBlue bg-white"
+                    >
+                      <!-- 1 -->
+                      <div class="text-start hidden md:inline-block">
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          R03
+                        </h4>
+                        <p
+                          class="text-sm md:text-base text-mutedPurple font-medium"
+                        >
+                          <span
+                            class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                          ></span>
+                          20 lábas raktár
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <h4
+                        class="text-xl md:text-2xl text-deepGray font-medium hidden md:inline-block"
+                      >
+                        15 m<sup>2</sup>
+                      </h4>
+                      <!-- md 1 -->
+                      <div
+                        class="flex md:hidden flex-row justify-between items-center w-full"
+                      >
+                        <!-- 1 -->
+                        <div class="text-start">
+                          <h4
+                            class="text-xl md:text-2xl text-deepGray font-medium"
+                          >
+                            R03
+                          </h4>
+                          <p
+                            class="text-sm md:text-base text-mutedPurple font-medium"
+                          >
+                            <span
+                              class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                            ></span>
+                            20 lábas raktár
+                          </p>
+                        </div>
+                        <!-- 2 -->
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          15 m<sup>2</sup>
+                        </h4>
+                      </div>
+                      <!-- 3 -->
+                      <div class="text-start hidden md:inline-block">
+                        <div class="flex flex-row justify-start items-center">
+                          <h4
+                            class="text-base md:text-lg text-deepGray font-medium"
+                          >
+                            25.000 Ft
+                          </h4>
+                          <sup>Ft</sup>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + áfa/hó
+                          </p>
+                        </div>
+                        <p class="text-sm text-mutedPurple font-light">
+                          + kaució
+                        </p>
+                      </div>
+                      <!-- 4 -->
+                      <a
+                        href="#"
+                        class="text-base text-white bg-skyBlue font-bold w-[135px] h-[45px] hidden md:flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                        >Ezt bérelném</a
+                      >
+                      <!-- md 2 -->
+                      <div class="flex md:hidden flex-col w-full">
+                        <!-- 3 -->
+                        <div class="text-start inline-block md:hidden py-4">
+                          <div class="flex flex-row justify-start items-center">
+                            <h4
+                              class="text-base md:text-lg text-deepGray font-medium"
+                            >
+                              25.000 Ft
+                            </h4>
+                            <sup>Ft</sup>
+                            <p class="text-sm text-mutedPurple font-light">
+                              + áfa/hó
+                            </p>
+                          </div>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + kaució
+                          </p>
+                        </div>
+                        <!-- 4 -->
+                        <a
+                          href="#"
+                          class="text-base text-white bg-skyBlue font-bold w-full md:w-[135px] h-[45px] md:hidden flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                          >Ezt bérelném</a
+                        >
+                      </div>
+                    </li>
+                    <!-- item -04 -->
+                    <li
+                      class="flex flex-col md:flex-row justify-between items-center px-6 py-5 rounded-3xl shadow-lg border-[3px] border-white hover:border-skyBlue bg-white"
+                    >
+                      <!-- 1 -->
+                      <div class="text-start hidden md:inline-block">
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          R04
+                        </h4>
+                        <p
+                          class="text-sm md:text-base text-mutedPurple font-medium"
+                        >
+                          <span
+                            class="w-[10px] h-[10px] bg-mutedLavender rounded-full inline-block mr-[5px]"
+                          ></span>
+                          20 lábas raktár
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <h4
+                        class="text-xl md:text-2xl text-deepGray font-medium hidden md:inline-block"
+                      >
+                        15 m<sup>2</sup>
+                      </h4>
+                      <!-- md 1 -->
+                      <div
+                        class="flex md:hidden flex-row justify-between items-center w-full"
+                      >
+                        <!-- 1 -->
+                        <div class="text-start">
+                          <h4
+                            class="text-xl md:text-2xl text-deepGray font-medium"
+                          >
+                            R04
+                          </h4>
+                          <p
+                            class="text-sm md:text-base text-mutedPurple font-medium"
+                          >
+                            <span
+                              class="w-[10px] h-[10px] bg-mutedLavender rounded-full inline-block mr-[5px]"
+                            ></span>
+                            20 lábas raktár
+                          </p>
+                        </div>
+                        <!-- 2 -->
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          15 m<sup>2</sup>
+                        </h4>
+                      </div>
+                      <!-- 3 -->
+                      <div class="text-start hidden md:inline-block">
+                        <div class="flex flex-row justify-start items-center">
+                          <h4
+                            class="text-base md:text-lg text-deepGray font-medium"
+                          >
+                            25.000 Ft
+                          </h4>
+                          <sup>Ft</sup>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + áfa/hó
+                          </p>
+                        </div>
+                        <p class="text-sm text-mutedPurple font-light">
+                          + kaució
+                        </p>
+                      </div>
+                      <!-- 4 -->
+                      <a
+                        href="#"
+                        class="text-base text-skyBlue bg-white font-bold w-[135px] h-[45px] hidden md:flex justify-center items-center border-[2px] border-lavenderGray hover:bg-skyBlue hover:text-white hover:border-skyBlue rounded-[3px] group"
+                        ><svg
+                          class="w-5 h-5 mr-2"
+                          viewBox="0 0 20 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="fill-[#257BEB] group-hover:fill-white"
+                            d="M4.21444 3.57765C4.47824 3.2583 4.43321 2.78557 4.11386 2.52177C3.79452 2.25797 3.32178 2.303 3.05798 2.62234C2.1587 3.71097 1.50992 5.01576 1.20153 6.44786C1.11433 6.85279 1.37191 7.25174 1.77684 7.33894C2.18177 7.42614 2.58072 7.16857 2.66792 6.76364C2.92443 5.57244 3.46427 4.48577 4.21444 3.57765Z"
+                          />
+                          <path
+                            class="fill-[#257BEB] group-hover:fill-white"
+                            d="M16.9417 2.62234C16.6779 2.303 16.2051 2.25797 15.8858 2.52177C15.5664 2.78557 15.5214 3.2583 15.7852 3.57765C16.5354 4.48577 17.0752 5.57244 17.3317 6.76364C17.4189 7.16857 17.8179 7.42614 18.2228 7.33894C18.6277 7.25174 18.8853 6.85279 18.7981 6.44786C18.4897 5.01576 17.8409 3.71097 16.9417 2.62234Z"
+                          />
+                          <path
+                            class="fill-[#257BEB] group-hover:fill-white"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M9.99997 2.35083C6.68626 2.35083 3.99997 5.03712 3.99997 8.35083C3.99997 10.2375 3.54624 12.0159 2.7426 13.5851C2.63591 13.7935 2.6326 14.0397 2.73365 14.2508C2.83469 14.4619 3.02851 14.6138 3.25769 14.6613C4.32537 14.883 5.41181 15.0531 6.51426 15.1689C6.67494 16.9528 8.17421 18.3508 10 18.3508C11.8258 18.3508 13.3251 16.9528 13.4857 15.1689C14.5882 15.0531 15.6746 14.883 16.7422 14.6613C16.9714 14.6138 17.1652 14.4619 17.2663 14.2508C17.3673 14.0397 17.364 13.7935 17.2573 13.5851C16.4537 12.0159 16 10.2375 16 8.35083C16 5.03712 13.3137 2.35083 9.99997 2.35083ZM10 16.8508C9.04777 16.8508 8.25097 16.1854 8.0493 15.2941C8.69477 15.3317 9.34517 15.3508 9.99997 15.3508C10.6548 15.3508 11.3052 15.3317 11.9507 15.2941C11.749 16.1854 10.9522 16.8508 10 16.8508Z"
+                          />
+                        </svg>
+                        Értesíts</a
+                      >
+                      <!-- md 2 -->
+                      <div class="flex md:hidden flex-col w-full">
+                        <!-- 3 -->
+                        <div class="text-start inline-block md:hidden py-4">
+                          <div class="flex flex-row justify-start items-center">
+                            <h4
+                              class="text-base md:text-lg text-deepGray font-medium"
+                            >
+                              25.000 Ft
+                            </h4>
+                            <sup>Ft</sup>
+                            <p class="text-sm text-mutedPurple font-light">
+                              + áfa/hó
+                            </p>
+                          </div>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + kaució
+                          </p>
+                        </div>
+                        <!-- 4 -->
+                        <a
+                          href="#"
+                          class="text-base text-skyBlue bg-white font-bold w-full h-[45px] flex justify-center items-center border-[2px] border-lavenderGray hover:bg-skyBlue hover:text-white hover:border-skyBlue rounded-[3px] group"
+                          ><svg
+                            class="w-5 h-5 mr-2"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              class="fill-[#257BEB] group-hover:fill-white"
+                              d="M4.21444 3.57765C4.47824 3.2583 4.43321 2.78557 4.11386 2.52177C3.79452 2.25797 3.32178 2.303 3.05798 2.62234C2.1587 3.71097 1.50992 5.01576 1.20153 6.44786C1.11433 6.85279 1.37191 7.25174 1.77684 7.33894C2.18177 7.42614 2.58072 7.16857 2.66792 6.76364C2.92443 5.57244 3.46427 4.48577 4.21444 3.57765Z"
+                            />
+                            <path
+                              class="fill-[#257BEB] group-hover:fill-white"
+                              d="M16.9417 2.62234C16.6779 2.303 16.2051 2.25797 15.8858 2.52177C15.5664 2.78557 15.5214 3.2583 15.7852 3.57765C16.5354 4.48577 17.0752 5.57244 17.3317 6.76364C17.4189 7.16857 17.8179 7.42614 18.2228 7.33894C18.6277 7.25174 18.8853 6.85279 18.7981 6.44786C18.4897 5.01576 17.8409 3.71097 16.9417 2.62234Z"
+                            />
+                            <path
+                              class="fill-[#257BEB] group-hover:fill-white"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M9.99997 2.35083C6.68626 2.35083 3.99997 5.03712 3.99997 8.35083C3.99997 10.2375 3.54624 12.0159 2.7426 13.5851C2.63591 13.7935 2.6326 14.0397 2.73365 14.2508C2.83469 14.4619 3.02851 14.6138 3.25769 14.6613C4.32537 14.883 5.41181 15.0531 6.51426 15.1689C6.67494 16.9528 8.17421 18.3508 10 18.3508C11.8258 18.3508 13.3251 16.9528 13.4857 15.1689C14.5882 15.0531 15.6746 14.883 16.7422 14.6613C16.9714 14.6138 17.1652 14.4619 17.2663 14.2508C17.3673 14.0397 17.364 13.7935 17.2573 13.5851C16.4537 12.0159 16 10.2375 16 8.35083C16 5.03712 13.3137 2.35083 9.99997 2.35083ZM10 16.8508C9.04777 16.8508 8.25097 16.1854 8.0493 15.2941C8.69477 15.3317 9.34517 15.3508 9.99997 15.3508C10.6548 15.3508 11.3052 15.3317 11.9507 15.2941C11.749 16.1854 10.9522 16.8508 10 16.8508Z"
+                            />
+                          </svg>
+                          Értesíts</a
+                        >
+                      </div>
+                    </li>
+                    <!-- item -05 -->
+                    <li
+                      class="flex flex-col md:flex-row justify-between items-center px-6 py-5 rounded-3xl shadow-lg border-[3px] border-white hover:border-skyBlue bg-white"
+                    >
+                      <!-- 1 -->
+                      <div class="text-start hidden md:inline-block">
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          R05
+                        </h4>
+                        <p
+                          class="text-sm md:text-base text-mutedPurple font-medium"
+                        >
+                          <span
+                            class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                          ></span>
+                          20 lábas raktár
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <h4
+                        class="text-xl md:text-2xl text-deepGray font-medium hidden md:inline-block"
+                      >
+                        15 m<sup>2</sup>
+                      </h4>
+                      <!-- md 1 -->
+                      <div
+                        class="flex md:hidden flex-row justify-between items-center w-full"
+                      >
+                        <!-- 1 -->
+                        <div class="text-start">
+                          <h4
+                            class="text-xl md:text-2xl text-deepGray font-medium"
+                          >
+                            R05
+                          </h4>
+                          <p
+                            class="text-sm md:text-base text-mutedPurple font-medium"
+                          >
+                            <span
+                              class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                            ></span>
+                            20 lábas raktár
+                          </p>
+                        </div>
+                        <!-- 2 -->
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          15 m<sup>2</sup>
+                        </h4>
+                      </div>
+                      <!-- 3 -->
+                      <div class="text-start hidden md:inline-block">
+                        <div class="flex flex-row justify-start items-center">
+                          <h4
+                            class="text-base md:text-lg text-deepGray font-medium"
+                          >
+                            25.000 Ft
+                          </h4>
+                          <sup>Ft</sup>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + áfa/hó
+                          </p>
+                        </div>
+                        <p class="text-sm text-mutedPurple font-light">
+                          + kaució
+                        </p>
+                      </div>
+                      <!-- 4 -->
+                      <a
+                        href="#"
+                        class="text-base text-white bg-skyBlue font-bold w-[135px] h-[45px] hidden md:flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                        >Ezt bérelném</a
+                      >
+                      <!-- md 2 -->
+                      <div class="flex md:hidden flex-col w-full">
+                        <!-- 3 -->
+                        <div class="text-start inline-block md:hidden py-4">
+                          <div class="flex flex-row justify-start items-center">
+                            <h4
+                              class="text-base md:text-lg text-deepGray font-medium"
+                            >
+                              25.000 Ft
+                            </h4>
+                            <sup>Ft</sup>
+                            <p class="text-sm text-mutedPurple font-light">
+                              + áfa/hó
+                            </p>
+                          </div>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + kaució
+                          </p>
+                        </div>
+                        <!-- 4 -->
+                        <a
+                          href="#"
+                          class="text-base text-white bg-skyBlue font-bold w-full md:w-[135px] h-[45px] md:hidden flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                          >Ezt bérelném</a
+                        >
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="tab5-content" class="tab-contentx hidden">
+              <div
+                class="flex flex-col lg:flex-row justify-between items-center gap-8"
+              >
+                <div
+                  class="w-full xl:w-[40%] bg-white border border-lavenderGray rounded-3xl"
+                >
+                  <img src="./img/rent-maps.png" alt="" class="w-full h-full" />
+                </div>
+                <div class="w-full xl:w-[60%]">
+                  <ul
+                    class="space-y-4 max-h-[400px] overflow-y-auto overflow-x-hidden p-6 main-items"
+                  >
+                    <!-- item -01 -->
+                    <li
+                      class="flex flex-col md:flex-row justify-between items-center px-6 py-5 rounded-3xl shadow-lg border-[3px] border-white hover:border-skyBlue bg-white"
+                    >
+                      <!-- 1 -->
+                      <div class="text-start hidden md:inline-block">
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          R01
+                        </h4>
+                        <p
+                          class="text-sm md:text-base text-mutedPurple font-medium"
+                        >
+                          <span
+                            class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                          ></span>
+                          40 lábas raktár
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <h4
+                        class="text-xl md:text-2xl text-deepGray font-medium hidden md:inline-block"
+                      >
+                        30 m<sup>2</sup>
+                      </h4>
+                      <!-- md 1 -->
+                      <div
+                        class="flex md:hidden flex-row justify-between items-center w-full"
+                      >
+                        <!-- 1 -->
+                        <div class="text-start">
+                          <h4
+                            class="text-xl md:text-2xl text-deepGray font-medium"
+                          >
+                            R01
+                          </h4>
+                          <p
+                            class="text-sm md:text-base text-mutedPurple font-medium"
+                          >
+                            <span
+                              class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                            ></span>
+                            40 lábas raktár
+                          </p>
+                        </div>
+                        <!-- 2 -->
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          30 m<sup>2</sup>
+                        </h4>
+                      </div>
+                      <!-- 3 -->
+                      <div class="text-start hidden md:inline-block">
+                        <div class="flex flex-row justify-start items-center">
+                          <h4
+                            class="text-base md:text-lg text-deepGray font-medium"
+                          >
+                            25.000 Ft
+                          </h4>
+                          <sup>Ft</sup>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + áfa/hó
+                          </p>
+                        </div>
+                        <p class="text-sm text-mutedPurple font-light">
+                          + kaució
+                        </p>
+                      </div>
+                      <!-- 4 -->
+                      <a
+                        href="#"
+                        class="text-base text-white bg-skyBlue font-bold w-[135px] h-[45px] hidden md:flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                        >Ezt bérelném</a
+                      >
+                      <!-- md 2 -->
+                      <div class="flex md:hidden flex-col w-full">
+                        <!-- 3 -->
+                        <div class="text-start inline-block md:hidden py-4">
+                          <div class="flex flex-row justify-start items-center">
+                            <h4
+                              class="text-base md:text-lg text-deepGray font-medium"
+                            >
+                              25.000 Ft
+                            </h4>
+                            <sup>Ft</sup>
+                            <p class="text-sm text-mutedPurple font-light">
+                              + áfa/hó
+                            </p>
+                          </div>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + kaució
+                          </p>
+                        </div>
+                        <!-- 4 -->
+                        <a
+                          href="#"
+                          class="text-base text-white bg-skyBlue font-bold w-full md:w-[135px] h-[45px] md:hidden flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                          >Ezt bérelném</a
+                        >
+                      </div>
+                    </li>
+                    <!-- item -02 -->
+                    <li
+                      class="flex flex-col md:flex-row justify-between items-center px-6 py-5 rounded-3xl shadow-lg border-[3px] border-white hover:border-skyBlue bg-white"
+                    >
+                      <!-- 1 -->
+                      <div class="text-start hidden md:inline-block">
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          R02
+                        </h4>
+                        <p
+                          class="text-sm md:text-base text-mutedPurple font-medium"
+                        >
+                          <span
+                            class="w-[10px] h-[10px] bg-skyBlue rounded-full inline-block mr-[5px]"
+                          ></span>
+                          40 lábas raktár
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <h4
+                        class="text-xl md:text-2xl text-deepGray font-medium hidden md:inline-block"
+                      >
+                        30 m<sup>2</sup>
+                      </h4>
+                      <!-- md 1 -->
+                      <div
+                        class="flex md:hidden flex-row justify-between items-center w-full"
+                      >
+                        <!-- 1 -->
+                        <div class="text-start">
+                          <h4
+                            class="text-xl md:text-2xl text-deepGray font-medium"
+                          >
+                            R02
+                          </h4>
+                          <p
+                            class="text-sm md:text-base text-mutedPurple font-medium"
+                          >
+                            <span
+                              class="w-[10px] h-[10px] bg-skyBlue rounded-full inline-block mr-[5px]"
+                            ></span>
+                            40 lábas raktár
+                          </p>
+                        </div>
+                        <!-- 2 -->
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          30 m<sup>2</sup>
+                        </h4>
+                      </div>
+                      <!-- 3 -->
+                      <div class="text-start hidden md:inline-block">
+                        <div class="flex flex-row justify-start items-center">
+                          <h4
+                            class="text-base md:text-lg text-deepGray font-medium"
+                          >
+                            25.000 Ft
+                          </h4>
+                          <sup>Ft</sup>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + áfa/hó
+                          </p>
+                        </div>
+                        <p class="text-sm text-mutedPurple font-light">
+                          + kaució
+                        </p>
+                      </div>
+                      <!-- 4 -->
+                      <a
+                        href="#"
+                        class="text-base text-white bg-skyBlue font-bold w-[135px] h-[45px] hidden md:flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                        >Törlés</a
+                      >
+                      <!-- md 2 -->
+                      <div class="flex md:hidden flex-col w-full">
+                        <!-- 3 -->
+                        <div class="text-start inline-block md:hidden py-4">
+                          <div class="flex flex-row justify-start items-center">
+                            <h4
+                              class="text-base md:text-lg text-deepGray font-medium"
+                            >
+                              25.000 Ft
+                            </h4>
+                            <sup>Ft</sup>
+                            <p class="text-sm text-mutedPurple font-light">
+                              + áfa/hó
+                            </p>
+                          </div>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + kaució
+                          </p>
+                        </div>
+                        <!-- 4 -->
+                        <a
+                          href="#"
+                          class="text-base text-white bg-skyBlue font-bold w-full h-[45px] flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                          >Törlés</a
+                        >
+                      </div>
+                    </li>
+                    <!-- item -03 -->
+
+                    <li
+                      class="flex flex-col md:flex-row justify-between items-center px-6 py-5 rounded-3xl shadow-lg border-[3px] border-white hover:border-skyBlue bg-white"
+                    >
+                      <!-- 1 -->
+                      <div class="text-start hidden md:inline-block">
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          R03
+                        </h4>
+                        <p
+                          class="text-sm md:text-base text-mutedPurple font-medium"
+                        >
+                          <span
+                            class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                          ></span>
+                          40 lábas raktár
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <h4
+                        class="text-xl md:text-2xl text-deepGray font-medium hidden md:inline-block"
+                      >
+                        30 m<sup>2</sup>
+                      </h4>
+                      <!-- md 1 -->
+                      <div
+                        class="flex md:hidden flex-row justify-between items-center w-full"
+                      >
+                        <!-- 1 -->
+                        <div class="text-start">
+                          <h4
+                            class="text-xl md:text-2xl text-deepGray font-medium"
+                          >
+                            R03
+                          </h4>
+                          <p
+                            class="text-sm md:text-base text-mutedPurple font-medium"
+                          >
+                            <span
+                              class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                            ></span>
+                            40 lábas raktár
+                          </p>
+                        </div>
+                        <!-- 2 -->
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          30 m<sup>2</sup>
+                        </h4>
+                      </div>
+                      <!-- 3 -->
+                      <div class="text-start hidden md:inline-block">
+                        <div class="flex flex-row justify-start items-center">
+                          <h4
+                            class="text-base md:text-lg text-deepGray font-medium"
+                          >
+                            25.000 Ft
+                          </h4>
+                          <sup>Ft</sup>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + áfa/hó
+                          </p>
+                        </div>
+                        <p class="text-sm text-mutedPurple font-light">
+                          + kaució
+                        </p>
+                      </div>
+                      <!-- 4 -->
+                      <a
+                        href="#"
+                        class="text-base text-white bg-skyBlue font-bold w-[135px] h-[45px] hidden md:flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                        >Ezt bérelném</a
+                      >
+                      <!-- md 2 -->
+                      <div class="flex md:hidden flex-col w-full">
+                        <!-- 3 -->
+                        <div class="text-start inline-block md:hidden py-4">
+                          <div class="flex flex-row justify-start items-center">
+                            <h4
+                              class="text-base md:text-lg text-deepGray font-medium"
+                            >
+                              25.000 Ft
+                            </h4>
+                            <sup>Ft</sup>
+                            <p class="text-sm text-mutedPurple font-light">
+                              + áfa/hó
+                            </p>
+                          </div>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + kaució
+                          </p>
+                        </div>
+                        <!-- 4 -->
+                        <a
+                          href="#"
+                          class="text-base text-white bg-skyBlue font-bold w-full md:w-[135px] h-[45px] md:hidden flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                          >Ezt bérelném</a
+                        >
+                      </div>
+                    </li>
+                    <!-- item -04 -->
+                    <li
+                      class="flex flex-col md:flex-row justify-between items-center px-6 py-5 rounded-3xl shadow-lg border-[3px] border-white hover:border-skyBlue bg-white"
+                    >
+                      <!-- 1 -->
+                      <div class="text-start hidden md:inline-block">
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          R04
+                        </h4>
+                        <p
+                          class="text-sm md:text-base text-mutedPurple font-medium"
+                        >
+                          <span
+                            class="w-[10px] h-[10px] bg-mutedLavender rounded-full inline-block mr-[5px]"
+                          ></span>
+                          40 lábas raktár
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <h4
+                        class="text-xl md:text-2xl text-deepGray font-medium hidden md:inline-block"
+                      >
+                        30 m<sup>2</sup>
+                      </h4>
+                      <!-- md 1 -->
+                      <div
+                        class="flex md:hidden flex-row justify-between items-center w-full"
+                      >
+                        <!-- 1 -->
+                        <div class="text-start">
+                          <h4
+                            class="text-xl md:text-2xl text-deepGray font-medium"
+                          >
+                            R04
+                          </h4>
+                          <p
+                            class="text-sm md:text-base text-mutedPurple font-medium"
+                          >
+                            <span
+                              class="w-[10px] h-[10px] bg-mutedLavender rounded-full inline-block mr-[5px]"
+                            ></span>
+                            40 lábas raktár
+                          </p>
+                        </div>
+                        <!-- 2 -->
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          30 m<sup>2</sup>
+                        </h4>
+                      </div>
+                      <!-- 3 -->
+                      <div class="text-start hidden md:inline-block">
+                        <div class="flex flex-row justify-start items-center">
+                          <h4
+                            class="text-base md:text-lg text-deepGray font-medium"
+                          >
+                            25.000 Ft
+                          </h4>
+                          <sup>Ft</sup>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + áfa/hó
+                          </p>
+                        </div>
+                        <p class="text-sm text-mutedPurple font-light">
+                          + kaució
+                        </p>
+                      </div>
+                      <!-- 4 -->
+                      <a
+                        href="#"
+                        class="text-base text-skyBlue bg-white font-bold w-[135px] h-[45px] hidden md:flex justify-center items-center border-[2px] border-lavenderGray hover:bg-skyBlue hover:text-white hover:border-skyBlue rounded-[3px] group"
+                        ><svg
+                          class="w-5 h-5 mr-2"
+                          viewBox="0 0 20 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="fill-[#257BEB] group-hover:fill-white"
+                            d="M4.21444 3.57765C4.47824 3.2583 4.43321 2.78557 4.11386 2.52177C3.79452 2.25797 3.32178 2.303 3.05798 2.62234C2.1587 3.71097 1.50992 5.01576 1.20153 6.44786C1.11433 6.85279 1.37191 7.25174 1.77684 7.33894C2.18177 7.42614 2.58072 7.16857 2.66792 6.76364C2.92443 5.57244 3.46427 4.48577 4.21444 3.57765Z"
+                          />
+                          <path
+                            class="fill-[#257BEB] group-hover:fill-white"
+                            d="M16.9417 2.62234C16.6779 2.303 16.2051 2.25797 15.8858 2.52177C15.5664 2.78557 15.5214 3.2583 15.7852 3.57765C16.5354 4.48577 17.0752 5.57244 17.3317 6.76364C17.4189 7.16857 17.8179 7.42614 18.2228 7.33894C18.6277 7.25174 18.8853 6.85279 18.7981 6.44786C18.4897 5.01576 17.8409 3.71097 16.9417 2.62234Z"
+                          />
+                          <path
+                            class="fill-[#257BEB] group-hover:fill-white"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M9.99997 2.35083C6.68626 2.35083 3.99997 5.03712 3.99997 8.35083C3.99997 10.2375 3.54624 12.0159 2.7426 13.5851C2.63591 13.7935 2.6326 14.0397 2.73365 14.2508C2.83469 14.4619 3.02851 14.6138 3.25769 14.6613C4.32537 14.883 5.41181 15.0531 6.51426 15.1689C6.67494 16.9528 8.17421 18.3508 10 18.3508C11.8258 18.3508 13.3251 16.9528 13.4857 15.1689C14.5882 15.0531 15.6746 14.883 16.7422 14.6613C16.9714 14.6138 17.1652 14.4619 17.2663 14.2508C17.3673 14.0397 17.364 13.7935 17.2573 13.5851C16.4537 12.0159 16 10.2375 16 8.35083C16 5.03712 13.3137 2.35083 9.99997 2.35083ZM10 16.8508C9.04777 16.8508 8.25097 16.1854 8.0493 15.2941C8.69477 15.3317 9.34517 15.3508 9.99997 15.3508C10.6548 15.3508 11.3052 15.3317 11.9507 15.2941C11.749 16.1854 10.9522 16.8508 10 16.8508Z"
+                          />
+                        </svg>
+                        Értesíts</a
+                      >
+                      <!-- md 2 -->
+                      <div class="flex md:hidden flex-col w-full">
+                        <!-- 3 -->
+                        <div class="text-start inline-block md:hidden py-4">
+                          <div class="flex flex-row justify-start items-center">
+                            <h4
+                              class="text-base md:text-lg text-deepGray font-medium"
+                            >
+                              25.000 Ft
+                            </h4>
+                            <sup>Ft</sup>
+                            <p class="text-sm text-mutedPurple font-light">
+                              + áfa/hó
+                            </p>
+                          </div>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + kaució
+                          </p>
+                        </div>
+                        <!-- 4 -->
+                        <a
+                          href="#"
+                          class="text-base text-skyBlue bg-white font-bold w-full h-[45px] flex justify-center items-center border-[2px] border-lavenderGray hover:bg-skyBlue hover:text-white hover:border-skyBlue rounded-[3px] group"
+                          ><svg
+                            class="w-5 h-5 mr-2"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              class="fill-[#257BEB] group-hover:fill-white"
+                              d="M4.21444 3.57765C4.47824 3.2583 4.43321 2.78557 4.11386 2.52177C3.79452 2.25797 3.32178 2.303 3.05798 2.62234C2.1587 3.71097 1.50992 5.01576 1.20153 6.44786C1.11433 6.85279 1.37191 7.25174 1.77684 7.33894C2.18177 7.42614 2.58072 7.16857 2.66792 6.76364C2.92443 5.57244 3.46427 4.48577 4.21444 3.57765Z"
+                            />
+                            <path
+                              class="fill-[#257BEB] group-hover:fill-white"
+                              d="M16.9417 2.62234C16.6779 2.303 16.2051 2.25797 15.8858 2.52177C15.5664 2.78557 15.5214 3.2583 15.7852 3.57765C16.5354 4.48577 17.0752 5.57244 17.3317 6.76364C17.4189 7.16857 17.8179 7.42614 18.2228 7.33894C18.6277 7.25174 18.8853 6.85279 18.7981 6.44786C18.4897 5.01576 17.8409 3.71097 16.9417 2.62234Z"
+                            />
+                            <path
+                              class="fill-[#257BEB] group-hover:fill-white"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M9.99997 2.35083C6.68626 2.35083 3.99997 5.03712 3.99997 8.35083C3.99997 10.2375 3.54624 12.0159 2.7426 13.5851C2.63591 13.7935 2.6326 14.0397 2.73365 14.2508C2.83469 14.4619 3.02851 14.6138 3.25769 14.6613C4.32537 14.883 5.41181 15.0531 6.51426 15.1689C6.67494 16.9528 8.17421 18.3508 10 18.3508C11.8258 18.3508 13.3251 16.9528 13.4857 15.1689C14.5882 15.0531 15.6746 14.883 16.7422 14.6613C16.9714 14.6138 17.1652 14.4619 17.2663 14.2508C17.3673 14.0397 17.364 13.7935 17.2573 13.5851C16.4537 12.0159 16 10.2375 16 8.35083C16 5.03712 13.3137 2.35083 9.99997 2.35083ZM10 16.8508C9.04777 16.8508 8.25097 16.1854 8.0493 15.2941C8.69477 15.3317 9.34517 15.3508 9.99997 15.3508C10.6548 15.3508 11.3052 15.3317 11.9507 15.2941C11.749 16.1854 10.9522 16.8508 10 16.8508Z"
+                            />
+                          </svg>
+                          Értesíts</a
+                        >
+                      </div>
+                    </li>
+                    <!-- item -05 -->
+                    <li
+                      class="flex flex-col md:flex-row justify-between items-center px-6 py-5 rounded-3xl shadow-lg border-[3px] border-white hover:border-skyBlue bg-white"
+                    >
+                      <!-- 1 -->
+                      <div class="text-start hidden md:inline-block">
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          R05
+                        </h4>
+                        <p
+                          class="text-sm md:text-base text-mutedPurple font-medium"
+                        >
+                          <span
+                            class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                          ></span>
+                          40 lábas raktár
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <h4
+                        class="text-xl md:text-2xl text-deepGray font-medium hidden md:inline-block"
+                      >
+                        30 m<sup>2</sup>
+                      </h4>
+                      <!-- md 1 -->
+                      <div
+                        class="flex md:hidden flex-row justify-between items-center w-full"
+                      >
+                        <!-- 1 -->
+                        <div class="text-start">
+                          <h4
+                            class="text-xl md:text-2xl text-deepGray font-medium"
+                          >
+                            R05
+                          </h4>
+                          <p
+                            class="text-sm md:text-base text-mutedPurple font-medium"
+                          >
+                            <span
+                              class="w-[10px] h-[10px] bg-vibrantGreen rounded-full inline-block mr-[5px]"
+                            ></span>
+                            40 lábas raktár
+                          </p>
+                        </div>
+                        <!-- 2 -->
+                        <h4
+                          class="text-xl md:text-2xl text-deepGray font-medium"
+                        >
+                          30 m<sup>2</sup>
+                        </h4>
+                      </div>
+                      <!-- 3 -->
+                      <div class="text-start hidden md:inline-block">
+                        <div class="flex flex-row justify-start items-center">
+                          <h4
+                            class="text-base md:text-lg text-deepGray font-medium"
+                          >
+                            25.000 Ft
+                          </h4>
+                          <sup>Ft</sup>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + áfa/hó
+                          </p>
+                        </div>
+                        <p class="text-sm text-mutedPurple font-light">
+                          + kaució
+                        </p>
+                      </div>
+                      <!-- 4 -->
+                      <a
+                        href="#"
+                        class="text-base text-white bg-skyBlue font-bold w-[135px] h-[45px] hidden md:flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                        >Ezt bérelném</a
+                      >
+                      <!-- md 2 -->
+                      <div class="flex md:hidden flex-col w-full">
+                        <!-- 3 -->
+                        <div class="text-start inline-block md:hidden py-4">
+                          <div class="flex flex-row justify-start items-center">
+                            <h4
+                              class="text-base md:text-lg text-deepGray font-medium"
+                            >
+                              25.000 Ft
+                            </h4>
+                            <sup>Ft</sup>
+                            <p class="text-sm text-mutedPurple font-light">
+                              + áfa/hó
+                            </p>
+                          </div>
+                          <p class="text-sm text-mutedPurple font-light">
+                            + kaució
+                          </p>
+                        </div>
+                        <!-- 4 -->
+                        <a
+                          href="#"
+                          class="text-base text-white bg-skyBlue font-bold w-full md:w-[135px] h-[45px] md:hidden flex justify-center items-center border-[2px] border-skyBlue hover:bg-white hover:text-skyBlue hover:border-lavenderGray rounded-[3px]"
+                          >Ezt bérelném</a
+                        >
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- choose end -->
+      <!-- location start -->
+      <section class="bg-pearlGray py-6">
+        <div
+          class="max-w-[800px] px-5 mx-auto flex flex-col lg:flex-row justify-between items-center gap-5 lg:gap-8"
+        >
+          <!-- item-01 -->
+          <div class="w-full lg:w-1/2">
+            <h3
+              class="text-xl text-deepGray font-normal flex justify-center items-center"
+            >
+              <img src="./img/location.svg" alt="" class="mr-2" />Másik
+              telephelyet választok:
+            </h3>
+          </div>
+          <!-- item-02 -->
+          <div class="w-full lg:w-1/2">
+            <button
+              class="w-full bg-white rounded-lg py-3 px-6 text-start border border-lavenderGray"
+            >
+              <h3 class="text-base text-deepGray font-medium">
+                Budapesti telephely A
+              </h3>
+              <p class="text-sm text-mutedPurple font-light">
+                1106 Budapest, Keresztúri út 86/C
+              </p>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- location end -->
+      <!-- map start -->
+      <section class="w-full" id="map">
+        <div>
+          <img
+            src="./img/map-demo.svg"
+            alt=""
+            class="w-full min-h-[250px] lg:min-h-[300px] object-cover object-center"
+          />
+        </div>
+      </section>
+      <!-- map end -->
+      <!-- contact start -->
+      <section class="py-8 lg:py-24 relative" id="contact">
+        <div
+          class="px-5 max-w-[1280px] mx-auto border-b-1 border-lavenderGray relative z-20"
+        >
+          <!-- content -->
+          <div>
+            <p
+              class="text-base lg:text-lg font-normal text-skyBlue leading-normal tracking-wide text-center uppercase"
+            >
+              Kapcsolat
+            </p>
+            <h2
+              class="max-w-[560px] mx-auto text-2xl lg:text-3xl font-semibold text-deepGray tracking-wide text-center pt-3 pb-4 lg:pt-6 lg:pb-4"
+            >
+              Töltse ki az
+              <span class="text-skyBlue">Űrlapot!</span>
+            </h2>
+            <p
+              class="max-w-[750px] mx-auto text-base font-light text-mutedPurple leading-normal tracking-wide text-center"
+            >
+              Ha nem biztos benne, hogy milyen méretű raktárat szeretne
+              kibérelni vagy konténert vásárolna, írja meg nekünk és segítünk.
+            </p>
+          </div>
+          <!-- Tab Navigation -->
+          <div
+            class="flex justify-center items-center mt-10"
+            id="tab-navigation-1"
+          >
+            <div class="border-2 border-lavenderGray rounded-lg gap-0">
+              <button
+                class="text-base text-white bg-skyBlue font-bold text-center border-lavenderGray focus:outline-none transition duration-300 active-tab lg:min-w-[161px] min-h-[40px] lg:min-h-[46px] rounded-l-md px-7"
+                data-tab="tab1-content"
+              >
+                Magánszemély
+              </button>
+              <button
+                class="text-base text-mutedPurple bg-pearlGray font-bold text-center border-lavenderGray focus:outline-none transition duration-300 lg:min-w-[160px] min-h-[40px] lg:min-h-[46px] rounded-r-md px-7"
+                data-tab="tab2-content"
+              >
+                Cég
+              </button>
+            </div>
+          </div>
+          <!-- tab content -->
+          <div class="mt-8">
+            <div id="tab1-content" class="tab-content">
+              <div
+                class="flex flex-col lg:flex-row justify-between items-center gap-9 lg:gap-10"
+              >
+                <div class="w-full lg:w-1/3 space-y-4 lg:space-y-6">
+                  <!-- item 01 -->
+                  <div
+                    class="flex justify-start items-center space-x-[18px] bg-white p-3 lg:p-6 rounded-lg max-h-[104px]"
+                  >
+                    <img src="./img/phone-contact.svg" alt="" />
+                    <div class="space-y-1">
+                      <h3 class="text-base text-mutedPurple font-light">
+                        Telefonszám
+                      </h3>
+                      <a
+                        href="tel:+36308830991"
+                        class="text-base text-deepGray hover:text-midnightBlue font-medium"
+                        >+36 30 883 0991</a
+                      >
+                    </div>
+                  </div>
+                  <!-- item 02 -->
+                  <div
+                    class="flex justify-start items-center space-x-[18px] bg-white p-3 lg:p-6 rounded-lg max-h-[104px]"
+                  >
+                    <img src="./img/email.svg" alt="" />
+                    <div class="space-y-1">
+                      <h3 class="text-base text-mutedPurple font-light">
+                        Email cím
+                      </h3>
+                      <a
+                        href="mailto:berles@biztosraktar.hu"
+                        class="text-base text-deepGray hover:text-midnightBlue font-medium"
+                        >berles@biztosraktar.hu</a
+                      >
+                    </div>
+                  </div>
+                  <!-- item 03 -->
+                  <div
+                    class="flex justify-start items-center space-x-[18px] bg-white p-3 lg:p-6 rounded-lg max-h-[104px]"
+                  >
+                    <img src="./img/locations.svg" alt="" />
+                    <div class="space-y-1">
+                      <h3 class="text-base text-mutedPurple font-light">
+                        Központi raktár címe
+                      </h3>
+                      <a
+                        href="tel:+36308830991"
+                        class="text-base text-deepGray hover:text-midnightBlue font-medium"
+                        >Budapest, Keresztúri út 86/CHU-1106</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full lg:w-2/3">
+                  <form action="">
+                    <div
+                      class="grid grid-cols-1 gap-4 lg:gap-x-6 lg:gap-y-6 md:grid-cols-6"
+                    >
+                      <div class="md:col-span-3">
+                        <div class="mt-2">
+                          <input
+                            type="text"
+                            name="name"
+                            placeholder="Teljes név / Cégnév"
+                            id="first-name"
+                            autocomplete="given-name"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="md:col-span-3">
+                        <div class="mt-2">
+                          <input
+                            type="mail"
+                            name="email"
+                            placeholder="Email cím"
+                            id="email"
+                            autocomplete="email"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+                      <div class="md:col-span-3">
+                        <div class="mt-2">
+                          <input
+                            type="tel"
+                            name="phone"
+                            placeholder="Telefonszám"
+                            id="phone"
+                            autocomplete="phone"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+                      <div class="md:col-span-3">
+                        <div class="mt-2">
+                          <select
+                            id="containerRental"
+                            name="containerRental"
+                            autocomplete="container-rental"
+                            aria-placeholder="Konténer bérlés"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          >
+                            <option>Konténer bérlés</option>
+                            <option>Konténer bérlés</option>
+                            <option>Konténer bérlés</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-span-full">
+                        <div class="mt-2">
+                          <textarea
+                            id="about"
+                            name="about"
+                            placeholder="Üzenet"
+                            rows="6"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-span-full">
+                        <button
+                          class="w-full md:w-auto px-[72px] h-12 lg:h-14 bg-skyBlue text-white rounded-[3px] text-lg font-semibold leading-normal tracking-wide hover:bg-midnightBlue float-right"
+                        >
+                          Küldés
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div id="tab2-content" class="tab-content hidden">
+              <div
+                class="flex flex-col lg:flex-row justify-between items-center gap-9 lg:gap-10"
+              >
+                <div class="w-full lg:w-1/3 space-y-4 lg:space-y-6">
+                  <!-- item 01 -->
+                  <div
+                    class="flex justify-start items-center space-x-[18px] bg-white p-3 lg:p-6 rounded-lg max-h-[104px]"
+                  >
+                    <img src="./img/phone-contact.svg" alt="" />
+                    <div class="space-y-1">
+                      <h3 class="text-base text-mutedPurple font-light">
+                        Telefonszám
+                      </h3>
+                      <a
+                        href="tel:+36308830991"
+                        class="text-base text-deepGray hover:text-midnightBlue font-medium"
+                        >+36 30 883 0991</a
+                      >
+                    </div>
+                  </div>
+                  <!-- item 02 -->
+                  <div
+                    class="flex justify-start items-center space-x-[18px] bg-white p-3 lg:p-6 rounded-lg max-h-[104px]"
+                  >
+                    <img src="./img/email.svg" alt="" />
+                    <div class="space-y-1">
+                      <h3 class="text-base text-mutedPurple font-light">
+                        Email cím
+                      </h3>
+                      <a
+                        href="mailto:berles@biztosraktar.hu"
+                        class="text-base text-deepGray hover:text-midnightBlue font-medium"
+                        >berles@biztosraktar.hu</a
+                      >
+                    </div>
+                  </div>
+                  <!-- item 03 -->
+                  <div
+                    class="flex justify-start items-center space-x-[18px] bg-white p-3 lg:p-6 rounded-lg max-h-[104px]"
+                  >
+                    <img src="./img/locations.svg" alt="" />
+                    <div class="space-y-1">
+                      <h3 class="text-base text-mutedPurple font-light">
+                        Központi raktár címe
+                      </h3>
+                      <a
+                        href="tel:+36308830991"
+                        class="text-base text-deepGray hover:text-midnightBlue font-medium"
+                        >Budapest, Keresztúri út 86/CHU-1106</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full lg:w-2/3">
+                  <form action="">
+                    <div
+                      class="grid grid-cols-1 gap-4 lg:gap-x-6 lg:gap-y-6 md:grid-cols-6"
+                    >
+                      <div class="md:col-span-3">
+                        <div class="mt-2">
+                          <input
+                            type="text"
+                            name="name"
+                            placeholder="Teljes név / Cégnév"
+                            id="first-name"
+                            autocomplete="given-name"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="md:col-span-3">
+                        <div class="mt-2">
+                          <input
+                            type="mail"
+                            name="email"
+                            placeholder="Email cím"
+                            id="email"
+                            autocomplete="email"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+                      <div class="md:col-span-3">
+                        <div class="mt-2">
+                          <input
+                            type="tel"
+                            name="phone"
+                            placeholder="Telefonszám"
+                            id="phone"
+                            autocomplete="phone"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+                      <div class="md:col-span-3">
+                        <div class="mt-2">
+                          <select
+                            id="containerRental"
+                            name="containerRental"
+                            autocomplete="container-rental"
+                            aria-placeholder="Konténer bérlés"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          >
+                            <option>Konténer bérlés</option>
+                            <option>Konténer bérlés</option>
+                            <option>Konténer bérlés</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-span-full">
+                        <div class="mt-2">
+                          <textarea
+                            id="about"
+                            name="about"
+                            placeholder="Üzenet"
+                            rows="6"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-span-full">
+                        <button
+                          class="w-full md:w-auto px-[72px] h-12 lg:h-14 bg-skyBlue text-white rounded-[3px] text-lg font-semibold leading-normal tracking-wide hover:bg-midnightBlue float-right"
+                        >
+                          Küldés
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute left-0 -bottom-20">
+          <img src="./img/shadow2.svg" alt="" />
+        </div>
+        <div class="absolute right-0 top-10">
+          <img src="./img/shadow3.svg" alt="" />
+        </div>
+      </section>
+      <!-- contact end -->
+      <div class="w-full h-[1px] bg-lightLavender"></div>
+      <section class="py-10 lg:pt-20 lg:pb-16" aria-colspan="">
+        <div
+          class="px-5 max-w-[1280px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-0"
+        >
+          <div class="w-full md:max-w-[240px]">
+            <!-- Logo -->
+            <a href="./index.html" class="logo-container">
+              <img
+                src="./img/Logo.svg"
+                alt="Logo"
+                class="default-logo w-[60%] lg:w-[70%] xl:w-full"
+              />
+              <img
+                src="./img/Logo-hover.svg"
+                alt="Hover Logo"
+                class="hover-logo w-[60%] lg:w-[70%] xl:w-full"
+              />
+            </a>
+          </div>
+          <!-- content -->
+          <p
+            class="max-w-[526px] text-base font-light text-mutedPurple text-center lg:text-start"
+          >
+            Különböző méretű, biztonságos és 0-24 hozzáférhető
+            raktárkonténereket kínálunk bérbe, akár egyedi igények alapján is,
+            központi helyen, rakodási segítséggel.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- main end -->
+    <!-- footer start -->
+    <footer class="border-t-[1px] border-lightLavender">
+      <!-- top -->
+      <div
+        class="max-w-[1280px] px-5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 lg:gap-6 py-10 lg:py-20 border-b-[1px] border-softLilac"
+      >
+        <!-- Column 1 -->
+        <ul class="space-y-4">
+          <li class="pb-0 lg:pb-6">
+            <p class="text-deepGray text-lg lg:text-xl font-bold">Főoldal</p>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >Raktár Bérlés</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >Bérleti díjak</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >GYIK</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >Kapcsolat</a
+            >
+          </li>
+        </ul>
+
+        <!-- Column 2 -->
+        <ul class="space-y-4">
+          <li class="pb-0 lg:pb-6">
+            <p class="text-deepGray text-lg lg:text-xl font-bold">
+              Oldal információk
+            </p>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >ÁSZF</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >Cookie tájékoztató</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >Fizetési információk</a
+            >
+          </li>
+        </ul>
+
+        <!-- Column 3 -->
+        <ul class="space-y-4">
+          <li class="pb-0 lg:pb-6">
+            <p class="text-deepGray text-lg lg:text-xl font-bold">Letöltések</p>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >iOS</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >Android</a
+            >
+          </li>
+        </ul>
+
+        <!-- Column 4 (Image) -->
+        <div class="flex justify-center md:justify-start">
+          <a href="#"><img src="./img/footer-container.png" alt="" /></a>
+        </div>
+      </div>
+
+      <!-- bottom -->
+      <div
+        class="max-w-[1280px] px-5 mx-auto flex flex-col lg:flex-row lg:justify-between justify-center lg:items-start item-start py-8 lg:py-20 border-b-[1px] border-softLilac gap-4"
+      >
+        <p
+          class="text-mutedPurple text-sm lg:text-lg font-light text-center lg:text-start"
+        >
+          Copyright © 2024 Üzemeltető |
+          <a href="#" class="hover:text-midnightBlue">Minden jog fenntartva.</a>
+        </p>
+        <p
+          class="text-mutedPurple text-sm lg:text-lg font-light flex gap-5 text-center lg:text-end mx-auto lg:mx-0"
+        >
+          Készítette: <a href="#"><img src="./img/netjpar.svg" alt="" /></a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- divider start -->
+    <img src="./img/divider.png" alt="" class="w-full min-h-7 lg:min-h-16" />
+    <!-- divider end -->
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

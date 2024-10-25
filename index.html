@@ -1,0 +1,2247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIZTOSRAKTAR</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body class="font-lexend">
+    <!-- top header start -->
+    <section class="bg-midnightBlue hidden md:block">
+      <div
+        class="h-12 max-w-[1280px] px-5 mx-auto flex justify-start items-center space-x-6"
+      >
+        <a
+          href="tel:+36308830991"
+          class="flex items-center justify-center text-lg text-white leading-6 tracking-wide hover:text-vibrantOrange"
+        >
+          <img src="./img/phone.svg" alt="" class="max-h-5 max-w-5 mr-3" />+36
+          30 883 0991</a
+        >
+        <a
+          href="mailto:berles@biztosraktar.hu"
+          class="flex items-center justify-center text-lg text-white leading-6 tracking-wide hover:text-vibrantOrange"
+          ><img
+            src="./img/envelope.svg"
+            alt=""
+            class="max-h-5 max-w-5 mr-3"
+          />berles@biztosraktar.hu</a
+        >
+        <a
+          href="#"
+          class="flex items-center justify-center text-lg text-white leading-6 tracking-wide hover:text-vibrantOrange"
+          ><img src="./img/clock.svg" alt="" class="max-h-5 max-w-5 mr-3" />H–V:
+          0-24</a
+        >
+      </div>
+    </section>
+    <!-- top header end -->
+    <!-- header start -->
+    <header>
+      <div class="max-w-[1280px] px-5 mx-auto">
+        <nav class="flex justify-between items-center py-4 lg:py-7">
+          <!-- usto -->
+          <a href="./index.html" class="logo-container">
+            <img
+              src="./img/Logo.svg"
+              alt="Logo"
+              class="default-logo w-[70%] lg:w-[90%] xl:w-full"
+            />
+            <img
+              src="./img/Logo-hover.svg"
+              alt="Hover Logo"
+              class="hover-logo w-[70%] lg:w-[90%] xl:w-full"
+            />
+          </a>
+
+          <!-- Hamburger Menu (mobile) -->
+          <input type="checkbox" id="menu-toggle" class="hidden" />
+          <label for="menu-toggle" class="cursor-pointer block lg:hidden">
+            <div class="hamburger">
+              <span class="hamburger-line line-1"></span>
+              <span class="hamburger-line line-2"></span>
+              <span class="hamburger-line line-3"></span>
+            </div>
+          </label>
+
+          <!-- Menu -->
+          <ul
+            class="nav-menu absolute lg:relative left-0 top-16 md:top-[110px] lg:top-auto lg:bg-transparent bg-white shadow-lg lg:shadow-none w-full lg:w-auto text-center lg:flex lg:space-x-10 transition-all duration-500 ease-in-out max-h-0 overflow-hidden lg:max-h-full text-lg text-mutedPurple font-light leading-wide tracking-wide z-50"
+          >
+            <li
+              class="pt-6 pb-3 lg:py-0 mx-auto group flex justify-center items-center lg:hover:border-b-4 hover:border-skyBlue"
+            >
+              <a href="#" class="block md:inline">Raktárak</a>
+            </li>
+            <li
+              class="pt-3 pb-3 lg:py-0 mx-auto group flex justify-center items-center lg:hover:border-b-4 hover:border-skyBlue"
+            >
+              <a href="#" class="block md:inline">Bérlés</a>
+            </li>
+            <li
+              class="pt-3 pb-3 lg:py-0 mx-auto group flex justify-center items-center lg:hover:border-b-4 hover:border-skyBlue"
+            >
+              <a href="#" class="block md:inline">Kapcsolat</a>
+            </li>
+
+            <li
+              class="pt-3 pb-6 lg:py-0 flex md:flex-row flex-col lg:hidden justify-center gap-3 mx-auto px-5"
+            >
+              <a
+                href="#"
+                class="px-6 h-11 text-base text-skyBlue hover:text-white hover:bg-midnightBlue hover:border-midnightBlue font-medium leading-6 tracking-wide border-skyBlue border-2 rounded-[3px] flex items-center justify-center"
+              >
+                <svg
+                  class="w-4 h-4 mr-3"
+                  viewBox="0 0 16 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="stroke-skyBlue group-hover:stroke-white stroke-2 stroke-round"
+                    d="M11.1248 4.92542C11.1248 6.6513 9.72568 8.05042 7.99979 8.05042C6.2739 8.05042 4.87479 6.6513 4.87479 4.92542C4.87479 3.19953 6.2739 1.80042 7.99979 1.80042C9.72568 1.80042 11.1248 3.19953 11.1248 4.92542Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="stroke-skyBlue group-hover:stroke-white stroke-2 stroke-round"
+                    d="M1.75073 16.6906C1.80932 13.2895 4.58468 10.5504 7.99979 10.5504C11.415 10.5504 14.1904 13.2896 14.2488 16.6909C12.3465 17.5638 10.2301 18.0504 8.00005 18.0504C5.76978 18.0504 3.6532 17.5637 1.75073 16.6906Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                Belépés
+              </a>
+              <a
+                href="#"
+                class="px-6 h-11 text-base text-white hover:text-white hover:bg-midnightBlue hover:border-midbg-midnightBlue font-medium leading-6 tracking-wide bg-skyBlue border-skyBlue border-2 rounded-[3px] flex items-center justify-center"
+              >
+                Regisztráció
+              </a>
+            </li>
+          </ul>
+
+          <div class="hidden lg:flex space-x-6">
+            <a
+              href="#"
+              class="px-6 h-14 text-lg text-skyBlue font-semibold leading-6 tracking-wide border-skyBlue border-2 rounded-[3px] flex items-center justify-center hover:text-white hover:bg-midnightBlue hover:border-midnightBlue group"
+            >
+              <svg
+                class="w-4 h-4 mr-3"
+                viewBox="0 0 16 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="stroke-skyBlue group-hover:stroke-white stroke-2 stroke-round"
+                  d="M11.1248 4.92542C11.1248 6.6513 9.72568 8.05042 7.99979 8.05042C6.2739 8.05042 4.87479 6.6513 4.87479 4.92542C4.87479 3.19953 6.2739 1.80042 7.99979 1.80042C9.72568 1.80042 11.1248 3.19953 11.1248 4.92542Z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  class="stroke-skyBlue group-hover:stroke-white stroke-2 stroke-round"
+                  d="M1.75073 16.6906C1.80932 13.2895 4.58468 10.5504 7.99979 10.5504C11.415 10.5504 14.1904 13.2896 14.2488 16.6909C12.3465 17.5638 10.2301 18.0504 8.00005 18.0504C5.76978 18.0504 3.6532 17.5637 1.75073 16.6906Z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Belépés</a
+            >
+            <a
+              href="#"
+              class="px-6 h-14 text-lg text-white font-semibold leading-6 tracking-wide bg-skyBlue border-skyBlue border-2 rounded-[3px] flex items-center justify-center hover:text-white hover:bg-midnightBlue hover:border-midnightBlue"
+              >Regisztráció</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+      <!-- hero start -->
+      <section class="pt-7 pb-8 lg:pt-10 lg:pb-16" id="hero">
+        <div
+          class="px-5 max-w-[1440px] mx-auto flex flex-col lg:flex-row justify-between md:items-center relative z-30"
+        >
+          <!-- top -->
+          <div
+            class="w-full lg:w-[48%] xl:w-[48%] 2xl:w-[47%] 3xl:w-[55%] relative 3xl:-ml-[8%] lg:pr-9"
+          >
+            <div class="relative w-full h-auto flex justify-end">
+              <!-- First image (smaller size) -->
+              <img
+                src="./img/map.png"
+                alt=""
+                class="w-full lg:w-[80%] xl:w-[85%] 2xl:w-[85%] h-auto"
+              />
+
+              <!-- Second image (overlayed larger image) -->
+              <img
+                src="./img/map-container.png"
+                alt=""
+                class="absolute -top-[2%] right-0 w-full lg:w-[95%] xl:w-[95%] 2xl:w-[95%] h-full z-10"
+              />
+            </div>
+
+            <!-- items 1 -->
+            <a
+              href="#"
+              class="p-4 md:p-5 flex justify-start md:justify-center items-center shadow-md w-[188px] md:w-[228px] h-[66px] md:h-[78px] rounded-3xl absolute top-[10%] left-[10%] sm:top-[10%] sm:left-[10%] md:top-[17%] md:left-[34%] lg:top-[8%] lg:left-[32%] xl:top-[11%] xl:left-[34%] bg-white z-30"
+            >
+              <img
+                src="./img/location.svg"
+                alt=""
+                class="-mt-[14px] md:-mt-[8px] w-5 h-5 md:w-7 md:h-7"
+              />
+              <div class="ml-[6px] md:ml-[10px]">
+                <h3
+                  class="text-base lg:text-lg font-semibold text-skyBlue leading-5 tracking-wide"
+                >
+                  Budapest X.
+                </h3>
+                <p
+                  class="text-sm md:text-base text-mutedPurple leading-6 tracking-wide"
+                >
+                  Keresztúri út 86/C
+                </p>
+              </div>
+            </a>
+            <!-- items 2 -->
+            <a
+              href="#"
+              class="p-4 md:p-5 flex justify-start md:justify-center items-center shadow-md w-[195px] md:w-[236px] h-[66px] md:h-[78px] rounded-3xl absolute top-[35%] left-[38%] md:top-[30%] md:left-[70%] lg:top-[30%] lg:left-[55%] xl:left-[70%] bg-white z-30"
+            >
+              <img
+                src="./img/location.svg"
+                alt=""
+                class="-mt-[14px] md:-mt-[8px] w-5 h-5 md:w-7 md:h-7"
+              />
+              <div class="ml-[6px] md:ml-[10px]">
+                <h3
+                  class="text-base lg:text-lg font-semibold text-skyBlue leading-5 tracking-wide"
+                >
+                  Budapest X.
+                </h3>
+                <p
+                  class="text-sm md:text-base text-mutedPurple leading-6 tracking-wide"
+                >
+                  Keresztúri út 108/C
+                </p>
+              </div>
+            </a>
+            <!-- items 3 -->
+            <a
+              href="#"
+              class="p-4 md:p-5 flex justify-start md:justify-center items-center shadow-md w-[180px] md:w-[210px] h-[66px] md:h-[78px] rounded-3xl absolute top-[75%] left-[2%] sm:top-[73%] sm:left-[3%] md:top-[73%] md:left-[0%] lg:top-[80%] lg:left-[5%] xl:top-[72%] xl:left-[13%] bg-white z-30"
+            >
+              <img
+                src="./img/location.svg"
+                alt=""
+                class="-mt-[14px] md:-mt-[8px] w-5 h-5 md:w-7 md:h-7"
+              />
+              <div class="ml-[6px] md:ml-[10px]">
+                <h3
+                  class="text-base lg:text-lg font-semibold text-skyBlue leading-5 tracking-wide"
+                >
+                  Kápolnásnyék
+                </h3>
+                <p
+                  class="text-sm md:text-base text-mutedPurple leading-6 tracking-wide"
+                >
+                  Olajtelep
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- bottom -->
+          <div class="w-full lg:w-[48%] pt-10 lg:pt-0">
+            <div class="flex flex-col gap-4 md:gap-6">
+              <h2
+                class="text-base md:text-lg text-skyBlue leading-6 tracking-wide"
+              >
+                AUTOMATIZÁLT RAKTÁRBÉRLÉS
+              </h2>
+              <h1
+                class="text-2xl lg:text-[2.5rem] xl:text-5xl font-medium text-[#111827] leading-[1.5rem] tracking-wide max-w-full lg:max-w-[550px]"
+              >
+                Őrzött
+                <span class="text-skyBlue">Raktárainkban</span> biztonságban
+                tudhatja értékeit
+              </h1>
+              <p
+                class="lg:max-w-[600px] text-base md:text-lg text-mutedPurple leading-6 tracking-wide"
+              >
+                Több telephelyen is kínálunk raktárbérlési lehetőséget. Az egész
+                folyamatot online, kényelmesen otthonról vagy a mobiljáról is
+                intézheti.
+              </p>
+              <div
+                class="flex justify-center md:justify-start items-center gap-6 md:gap-12 my-4"
+              >
+                <img
+                  src="./img/container.svg"
+                  alt=""
+                  class="w-10 h-10 md:w-12 md:h-12"
+                />
+                <img
+                  src="./img/crain.svg"
+                  alt=""
+                  class="w-10 h-10 md:w-12 md:h-12"
+                />
+                <img
+                  src="./img/time.svg"
+                  alt=""
+                  class="w-10 h-10 md:w-12 md:h-12"
+                />
+              </div>
+              <div class="flex flex-col md:flex-row gap-3 md:gap-6">
+                <a
+                  href="#"
+                  class="px-12 h-14 text-base md:text-lg text-white font-semibold leading-6 tracking-wide bg-skyBlue border-[#257BEB] border-2 rounded-[3px] flex items-center justify-center hover:text-white hover:bg-[#1E478A] hover:border-[#1E478A]"
+                  >Regisztráció<img
+                    src="./img/arrow-right.svg"
+                    alt=""
+                    class="max-w-3 max-h-4 ml-3"
+                /></a>
+                <a
+                  href="#"
+                  class="px-12 h-14 text-base md:text-lg text-skyBlue font-semibold leading-6 tracking-wide bg-transparent border-lavenderGray border-2 rounded-[3px] flex items-center justify-center hover:text-white hover:bg-skyBlue"
+                  >Kapcsolat</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hero end -->
+      <!-- warehouse start -->
+      <section class="py-8 lg:py-[104px] relative z-10" id="warehouse">
+        <div
+          class="px-5 max-w-[1240px] mx-auto flex flex-col lg:flex-row justify-between items-center relative z-30"
+        >
+          <!-- top -->
+          <div class="w-full lg:w-1/3 flex items-center">
+            <div class="space-y-4 lg:space-y-6">
+              <h2
+                class="text-2xl lg:text-3xl font-semibold text-deepGray tracking-wide"
+              >
+                Raktáraink
+              </h2>
+              <p
+                class="text-base lg:text-xl font-normal text-mutedPurple tracking-wide max-w-full lg:max-w-[300px]"
+              >
+                Három különböző méretű konténer közül választhat, hogy
+                igényeinek megfelelő tároló helyet biztosítsunk.
+              </p>
+              <a
+                href="#"
+                class="text-base lg:text-lg font-normal text-skyBlue hover:text-midnightBlue group tracking-wide flex items-center gap-2 hover:underline-offset-4 hover:underline"
+              >
+                Bérleti díjak
+                <svg
+                  class="w-3.5 h-3.25"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="fill-[#257BEB] group-hover:fill-midnightBlue"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M-2.62268e-07 6.5C-2.80374e-07 6.08579 0.335786 5.75 0.75 5.75L11.3879 5.75L7.23017 1.79062C6.93159 1.50353 6.92228 1.02875 7.20937 0.730167C7.49647 0.431589 7.97125 0.422279 8.26983 0.709374L13.7698 5.95937C13.9169 6.10078 14 6.29599 14 6.5C14 6.70401 13.9169 6.89922 13.7698 7.04062L8.26983 12.2906C7.97125 12.5777 7.49647 12.5684 7.20938 12.2698C6.92228 11.9713 6.93159 11.4965 7.23017 11.2094L11.3879 7.25L0.75 7.25C0.335786 7.25 -2.44163e-07 6.91421 -2.62268e-07 6.5Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- bottom -->
+          <div
+            class="w-full lg:w-2/3 flex flex-col md:flex-row items-center justify-end gap-6 lg:gap-7 mt-9 lg:mt-0"
+          >
+            <div
+              class="border-[1px] bg-white border-lavenderGray hover:border-skyBlue rounded-3xl flex justify-center items-center relative w-full h-full md:max-w-[263px] md:max-h-[250px]"
+            >
+              <img
+                src="./img/warehouse-01.png"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute top-[14px] right-[14px] flex justify-center items-center text-base font-semibold text-white leading-none tracking-wide bg-skyBlue px-4 py-[4px] rounded-full gap-1"
+              >
+                <p>7</p>
+                <p>m<sup>2</sup></p>
+              </div>
+            </div>
+
+            <div
+              class="border-[1px] bg-white border-lavenderGray hover:border-skyBlue rounded-3xl flex justify-center items-center relative w-full h-full md:max-w-[263px] md:max-h-[250px]"
+            >
+              <img
+                src="./img/warehouse-02.png"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute top-[14px] right-[14px] flex justify-center items-center text-base font-semibold text-white tracking-wide bg-skyBlue px-4 py-[4px] leading-none rounded-full gap-1"
+              >
+                <p>15</p>
+                <p>m<sup>2</sup></p>
+              </div>
+            </div>
+
+            <div
+              class="border-[1px] bg-white border-lavenderGray hover:border-skyBlue rounded-3xl flex justify-center items-center relative w-full h-full md:max-w-[263px] md:max-h-[250px]"
+            >
+              <img
+                src="./img/warehouse-03.png"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute top-[14px] right-[14px] flex justify-center items-center text-base font-semibold text-white leading-none tracking-wide bg-skyBlue px-4 py-[4px] rounded-full gap-1"
+              >
+                <p>30</p>
+                <p>m<sup>2</sup></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute right-0 -bottom-20">
+          <img src="./img/shadow.svg" alt="" />
+        </div>
+      </section>
+      <!-- warehouse end -->
+
+      <!-- slider start -->
+      <section class="z-30">
+        <div class="swiper mySwiper min-h-[250px] lg:min-h-[480px] relative">
+          <div class="swiper-wrapper pb-14">
+            <div class="swiper-slide">
+              <img
+                src="./img/slider-01.webp"
+                alt=""
+                class="object-cover w-full"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/slider-02.webp"
+                alt=""
+                class="object-cover w-full"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/slider-03.webp"
+                alt=""
+                class="object-cover w-full"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/slider-04.webp"
+                alt=""
+                class="object-cover w-full"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/slider-05.webp"
+                alt=""
+                class="object-cover w-full"
+              />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- slider end -->
+      <!-- services start -->
+      <section class="py-8 lg:py-24" id="services">
+        <div class="px-5 max-w-[1240px] mx-auto">
+          <h2
+            class="text-2xl lg:text-3xl font-semibold text-deepGray tracking-wide text-center mb-12 lg:mb-16"
+          >
+            Szolgáltatásunk <span class="text-skyBlue">előnyei</span>
+          </h2>
+          <!-- cards -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 md:gap-y-12 md:space-y-0 space-y-8"
+          >
+            <!-- item 1 -->
+            <div class="flex flex-col items-center justify-start gap-2">
+              <img
+                src="./img/services-01.svg"
+                alt=""
+                class="w-20 h-20 lg:w-24 lg:h-24"
+              />
+              <h3
+                class="text-xl lg:text-2xl font-medium text-deepGray tracking-wide text-center pt-3 pb-1 md:pt-6 md:pb-2"
+              >
+                Biztonság
+              </h3>
+              <p
+                class="w-full lg:max-w-[324px] text-base font-light text-center text-mutedPurple"
+              >
+                Kamerával felszerelt telephelyünkön 0-24 figyeljük a rendszert
+                és szükség esetén azonnal intézkednek.
+              </p>
+            </div>
+            <!-- item 2 -->
+            <div class="flex flex-col items-center justify-start gap-2">
+              <img
+                src="./img/services-02.svg"
+                alt=""
+                class="w-20 h-20 lg:w-24 lg:h-24"
+              />
+              <h3
+                class="text-xl lg:text-2xl font-medium text-deepGray tracking-wide text-center pt-3 pb-1 md:pt-6 md:pb-2"
+              >
+                Hozzáférhetőség
+              </h3>
+              <p
+                class="w-full lg:max-w-[324px] text-base font-light text-center text-mutedPurple"
+              >
+                Regisztrált bérlőink a honlapunkon keresztül, bármikor
+                hozzáférhetnek a telephelyhez.
+              </p>
+            </div>
+            <!-- item 3 -->
+            <div class="flex flex-col items-center justify-start gap-2">
+              <img
+                src="./img/services-03.svg"
+                alt=""
+                class="w-20 h-20 lg:w-24 lg:h-24"
+              />
+              <h3
+                class="text-xl lg:text-2xl font-medium text-deepGray tracking-wide text-center pt-3 pb-1 md:pt-6 md:pb-2"
+              >
+                Autós behajtás
+              </h3>
+              <p
+                class="w-full lg:max-w-[324px] text-base font-light text-center text-mutedPurple"
+              >
+                Bérlőink közvetlenül a raktárak elé hajthatnak gépjárművükkel,
+                megkönnyítve a pakolást.
+              </p>
+            </div>
+            <!-- item 4 -->
+            <div class="flex flex-col items-center justify-start gap-2">
+              <img
+                src="./img/services-04.svg"
+                alt=""
+                class="w-20 h-20 lg:w-24 lg:h-24"
+              />
+              <h3
+                class="text-xl lg:text-2xl font-medium text-deepGray tracking-wide text-center pt-3 pb-1 md:pt-6 md:pb-2"
+              >
+                Egyedi megoldások
+              </h3>
+              <p
+                class="w-full lg:max-w-[324px] text-base font-light text-center text-mutedPurple"
+              >
+                Konténereinket nemcsak bérbe adjuk, hanem egyedi igények alapján
+                gyártást is vállalunk.
+              </p>
+            </div>
+            <!-- item 5 -->
+            <div class="flex flex-col items-center justify-start gap-2">
+              <img
+                src="./img/services-05.svg"
+                alt=""
+                class="w-20 h-20 lg:w-24 lg:h-24"
+              />
+              <h3
+                class="text-xl lg:text-2xl font-medium text-deepGray tracking-wide text-center pt-3 pb-1 md:pt-6 md:pb-2"
+              >
+                Rakodási segítség
+              </h3>
+              <p
+                class="w-full lg:max-w-[324px] text-base font-light text-center text-mutedPurple"
+              >
+                Telephelyünkön targoncás segítséget biztosítunk, hogy a ki- és
+                berakodás gördülékenyen és gyorsan történjen.
+              </p>
+            </div>
+            <!-- item 6 -->
+            <div class="flex flex-col items-center justify-start gap-2">
+              <img
+                src="./img/services-06.svg"
+                alt=""
+                class="w-20 h-20 lg:w-24 lg:h-24"
+              />
+              <h3
+                class="text-xl lg:text-2xl font-medium text-deepGray tracking-wide text-center pt-3 pb-1 md:pt-6 md:pb-2"
+              >
+                Gyors ügyfélszolgálat
+              </h3>
+              <p
+                class="w-full lg:max-w-[324px] text-base font-light text-center text-mutedPurple"
+              >
+                Diszpécserszolgálatunk mindig elérhető, ha segítségre van
+                szükség.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- services end -->
+      <!-- line start -->
+      <div
+        class="px-5 max-w-[1280px] mx-auto border-b-[1px] border-lavenderGray"
+      ></div>
+      <!-- line end -->
+      <!-- rent start -->
+      <section class="py-8 lg:py-24 relative" id="rent">
+        <div
+          class="px-5 max-w-[1280px] mx-auto border-b-1 border-lavenderGray z-20"
+        >
+          <!-- content -->
+          <div class="relative z-30">
+            <p
+              class="text-base lg:text-lg font-normal text-skyBlue leading-normal tracking-wide text-center"
+            >
+              BÉRLETI DÍJAK
+            </p>
+            <h2
+              class="max-w-[560px] mx-auto text-2xl lg:text-[44px] font-semibold text-deepGray leading-tight tracking-wide text-center pt-3 pb-4 lg:pt-6 lg:pb-4"
+            >
+              Bérelhető kültéri
+              <span class="text-skyBlue">raktár konténereink</span>
+            </h2>
+            <p
+              class="max-w-[730px] mx-auto text-base font-light text-mutedPurple leading-normal tracking-wide text-center"
+            >
+              Minden konténerünk új, masszív acélszerkezetű és teljesen
+              vízhatlan, így kis- és nagy volumenű tárgyak tárolására egyaránt
+              alkalmasak, legyen szó háztartási holmikról, üzleti készletekről
+              vagy nagyobb berendezésekről.
+            </p>
+          </div>
+          <!-- prices -->
+          <div
+            class="flex flex-col xl:flex-row gap-8 mt-10 lg:mt-16 relative z-30"
+          >
+            <!-- card 1 -->
+            <div
+              class="flex flex-col p-5 lg:p-10 bg-white border-[1px] border-lavenderGray rounded-3xl gap-8 flex-grow mt-0 md:mt-5"
+            >
+              <!-- top -->
+              <div class="flex-grow">
+                <!-- img -->
+                <div class="mb-2 relative">
+                  <img
+                    src="./img/price-01.png"
+                    alt=""
+                    class="w-full object-fill object-center"
+                  />
+                  <div
+                    class="absolute top-[14px] right-[14px] flex justify-center items-center text-sm md:text-base font-semibold text-white tracking-wide bg-skyBlue px-4 py-[4px] rounded-full gap-1"
+                  >
+                    <p>7</p>
+                    <p>m<sup>2</sup></p>
+                  </div>
+                </div>
+                <!-- text -->
+                <div>
+                  <h3
+                    class="text-2xl lg:text-4xl text-deepGray font-semibold leading-snug tracking-wide"
+                  >
+                    10 lábas raktár
+                  </h3>
+                  <p
+                    class="text-base font-light text-mutedPurple leading-normal tracking-wide"
+                  >
+                    Legkisebb elérhető raktárunk tökéletes kerti eszközök,
+                    kisgépek, vagy szezonális tárgyak elhelyezésére.
+                  </p>
+                </div>
+              </div>
+              <!-- bottom -->
+              <div>
+                <div class="flex justify-between items-end">
+                  <h3
+                    class="text-3xl lg:text-5xl text-deepGray font-semibold leading-none tracking-wide"
+                  >
+                    25.000<sup>Ft</sup>
+                  </h3>
+                  <p
+                    class="text-lg lg:text-xl font-normal text-mutedPurple leading-normal tracking-wide"
+                  >
+                    +áfa/hó
+                  </p>
+                </div>
+                <p
+                  class="text-sm lg:text-base font-light text-mutedPurple leading-normal tracking-wide pb-6"
+                >
+                  + 1 havi kaució
+                </p>
+                <ul class="space-y-5 pb-6">
+                  <li class="flex justify-start items-start gap-2">
+                    <img
+                      src="./img/check-white.svg"
+                      alt=""
+                      class="w-[24px] h-[24px] lg:w-[26px] lg:h-[26px]"
+                    />
+                    <p
+                      class="text-base font-medium text-mutedPurple leading-normal tracking-wide"
+                    >
+                      Kisgépek, bútorok, ingóságok tárolása
+                    </p>
+                  </li>
+                  <li class="flex justify-start items-start gap-2">
+                    <img
+                      src="./img/check-white.svg"
+                      alt=""
+                      class="w-[24px] h-[24px] lg:w-[26px] lg:h-[26px]"
+                    />
+                    <p
+                      class="text-base font-medium text-mutedPurple leading-normal tracking-wide"
+                    >
+                      7 m<sup>2</sup> alapterület
+                    </p>
+                  </li>
+                  <li class="flex justify-start items-start gap-2">
+                    <img
+                      src="./img/check-white.svg"
+                      alt=""
+                      class="w-[24px] h-[24px] lg:w-[26px] lg:h-[26px]"
+                    />
+                    <p
+                      class="text-base font-medium text-mutedPurple leading-normal tracking-wide"
+                    >
+                      3 x 2,44 x 2,44 méter
+                    </p>
+                  </li>
+                </ul>
+                <button
+                  class="w-full h-12 lg:h-14 flex justify-center items-center border-2 border-lavenderGray rounded-[3px] text-base font-medium text-skyBlue hover:border-midnightBlue hover:text-white hover:bg-midnightBlue leading-normal tracking-wide gap-6 group"
+                >
+                  Részletek
+                  <svg
+                    class="w-2.5 h-3.5"
+                    viewBox="0 0 9 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="stroke-[#257BEB] group-hover:stroke-white stroke-2 stroke-rounded"
+                      d="M1.83325 13.5L7.83325 7.5L1.83325 1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- card 2 (taller) -->
+            <div
+              class="flex flex-col p-5 lg:p-10 bg-midnightBlue border-[1px] border-lavenderGray rounded-3xl gap-8 flex-grow min-h-[600px]"
+            >
+              <!-- top -->
+              <div class="flex-grow">
+                <!-- img -->
+                <div class="mb-2 relative">
+                  <img
+                    src="./img/price-02.png"
+                    alt=""
+                    class="w-full object-fill object-center"
+                  />
+                  <div
+                    class="absolute top-[14px] right-[14px] flex justify-center items-center text-sm md:text-base font-semibold text-white tracking-wide bg-skyBlue px-4 py-[4px] rounded-full gap-1"
+                  >
+                    <p>15</p>
+                    <p>m<sup>2</sup></p>
+                  </div>
+                </div>
+                <!-- text -->
+                <div>
+                  <h3
+                    class="text-2xl lg:text-4xl text-white font-semibold leading-snug tracking-wide"
+                  >
+                    20 lábas raktár
+                  </h3>
+                  <p
+                    class="text-base font-light text-white leading-normal tracking-wide"
+                  >
+                    Ideális választás akár költözés, akár raktározás esetére, ez
+                    a méret megfelel bármilyen közepes tárolási igényre.
+                  </p>
+                </div>
+              </div>
+              <!-- bottom (aligned) -->
+              <div>
+                <div class="flex justify-between items-end">
+                  <h3
+                    class="text-3xl lg:text-5xl text-white font-semibold leading-none tracking-wide"
+                  >
+                    35.000<sup>Ft</sup>
+                  </h3>
+                  <p
+                    class="text-lg lg:text-xl font-normal text-white leading-normal tracking-wide"
+                  >
+                    +áfa/hó
+                  </p>
+                </div>
+                <p
+                  class="text-sm lg:text-base font-light text-white leading-normal tracking-wide pb-6"
+                >
+                  + 1 havi kaució
+                </p>
+                <ul class="space-y-5 pb-6">
+                  <li class="flex justify-start items-start gap-2">
+                    <img
+                      src="./img/check-white.svg"
+                      alt=""
+                      class="w-[24px] h-[24px] lg:w-[26px] lg:h-[26px]"
+                    />
+                    <p
+                      class="text-base font-medium text-white leading-normal tracking-wide"
+                    >
+                      Háztartási eszközök, nagygépek, bútorok tárolása
+                    </p>
+                  </li>
+                  <li class="flex justify-start items-start gap-2">
+                    <img
+                      src="./img/check-white.svg"
+                      alt=""
+                      class="w-[24px] h-[24px] lg:w-[26px] lg:h-[26px]"
+                    />
+                    <p
+                      class="text-base font-medium text-white leading-normal tracking-wide"
+                    >
+                      15 m<sup>2</sup> alapterület
+                    </p>
+                  </li>
+                  <li class="flex justify-start items-start gap-2">
+                    <img
+                      src="./img/check-white.svg"
+                      alt=""
+                      class="w-[24px] h-[24px] lg:w-[26px] lg:h-[26px]"
+                    />
+                    <p
+                      class="text-base font-medium text-white leading-normal tracking-wide"
+                    >
+                      6 x 2,44 x 2,44 méter
+                    </p>
+                  </li>
+                </ul>
+                <button
+                  class="w-full h-12 lg:h-14 flex justify-center items-center border-2 border-skyBlue rounded-[3px] text-base font-medium text-white bg-skyBlue hover:bg-white hover:text-skyBlue hover:border-white leading-normal tracking-wide gap-6 group"
+                >
+                  Részletek
+                  <svg
+                    class="w-2.5 h-3.5"
+                    viewBox="0 0 9 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="stroke-white group-hover:stroke-skyBlue stroke-2 stroke-rounded"
+                      d="M1.5 13.5L7.5 7.5L1.5 1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div
+              class="flex flex-col p-5 lg:p-10 bg-white border-[1px] border-lavenderGray rounded-3xl gap-8 flex-grow mt-0 md:mt-8"
+            >
+              <!-- top -->
+              <div class="flex-grow">
+                <!-- img -->
+                <div class="mb-2 relative">
+                  <img
+                    src="./img/price-03.png"
+                    alt=""
+                    class="w-full object-fill object-center"
+                  />
+                  <div
+                    class="absolute top-[14px] right-[14px] flex justify-center items-center text-sm md:text-base font-semibold text-white tracking-wide bg-skyBlue px-4 py-[4px] rounded-full gap-1"
+                  >
+                    <p>30</p>
+                    <p>m<sup>2</sup></p>
+                  </div>
+                </div>
+                <!-- text -->
+                <div>
+                  <h3
+                    class="text-2xl lg:text-4xl text-deepGray font-semibold leading-snug tracking-wide"
+                  >
+                    40 lábas raktár
+                  </h3>
+                  <p
+                    class="text-base font-light text-mutedPurple leading-normal tracking-wide"
+                  >
+                    Legnagyobb tárolónkban egy kisebb lakás is elfér. Ideális
+                    nagyobb tárgyak és készletek tárolására.
+                  </p>
+                </div>
+              </div>
+              <!-- bottom -->
+              <div>
+                <div class="flex justify-between items-end">
+                  <h3
+                    class="text-3xl lg:text-5xl text-deepGray font-semibold leading-none tracking-wide"
+                  >
+                    60.000<sup>Ft</sup>
+                  </h3>
+                  <p
+                    class="text-lg lg:text-xl font-normal text-mutedPurple leading-normal tracking-wide"
+                  >
+                    +áfa/hó
+                  </p>
+                </div>
+                <p
+                  class="text-sm lg:text-base font-light text-mutedPurple leading-normal tracking-wide pb-6"
+                >
+                  + 1 havi kaució
+                </p>
+                <ul class="space-y-5 pb-6">
+                  <li class="flex justify-start items-start gap-2">
+                    <img
+                      src="./img/check-white.svg"
+                      alt=""
+                      class="w-[24px] h-[24px] lg:w-[26px] lg:h-[26px]"
+                    />
+                    <p
+                      class="text-base font-medium text-mutedPurple leading-normal tracking-wide"
+                    >
+                      Nagyobb mennyiségű árukészlet tárolására is alkalmas
+                    </p>
+                  </li>
+                  <li class="flex justify-start items-start gap-2">
+                    <img
+                      src="./img/check-white.svg"
+                      alt=""
+                      class="w-[24px] h-[24px] lg:w-[26px] lg:h-[26px]"
+                    />
+                    <p
+                      class="text-base font-medium text-mutedPurple leading-normal tracking-wide"
+                    >
+                      30 m<sup>2</sup> alapterület
+                    </p>
+                  </li>
+                  <li class="flex justify-start items-start gap-2">
+                    <img
+                      src="./img/check-white.svg"
+                      alt=""
+                      class="w-[24px] h-[24px] lg:w-[26px] lg:h-[26px]"
+                    />
+                    <p
+                      class="text-base font-medium text-mutedPurple leading-normal tracking-wide"
+                    >
+                      12 x 2,44 x 2,44 méter
+                    </p>
+                  </li>
+                </ul>
+                <button
+                  class="w-full h-12 lg:h-14 flex justify-center items-center border-2 border-lavenderGray rounded-[3px] text-base font-medium text-skyBlue hover:border-midnightBlue hover:text-white hover:bg-midnightBlue leading-normal tracking-wide gap-6 group"
+                >
+                  Részletek
+                  <svg
+                    class="w-2.5 h-3.5"
+                    viewBox="0 0 9 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="stroke-[#257BEB] group-hover:stroke-white stroke-2 stroke-rounded"
+                      d="M1.83325 13.5L7.83325 7.5L1.83325 1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="relative z-30">
+            <p
+              class="max-w-[830px] mx-auto text-base font-light text-mutedPurple leading-normal tracking-wide text-center mt-10 lg:mt-20"
+            >
+              A bérlési idő minimum 3 hónap. Minden konténer bérléséhez 1 havi
+              kaució befizetése szükséges. Ha a bérlés végén a konténert
+              kipakolva, tisztán és sértetlenül kapjuk vissza a kauciót
+              visszatérítjük.
+            </p>
+          </div>
+        </div>
+        <div class="absolute right-0 top-20">
+          <img src="./img/shadow.svg" alt="" />
+        </div>
+        <div class="absolute left-0 -bottom-10">
+          <img src="./img/glow-left.svg" alt="" />
+        </div>
+      </section>
+      <!-- rent end -->
+      <!-- divider start -->
+      <img src="./img/divider.png" alt="" class="w-full min-h-8 lg:min-h-16" />
+      <!-- divider end -->
+      <!-- online start -->
+      <section class="py-8 lg:py-24 relative" id="rent">
+        <div
+          class="px-5 max-w-[1280px] mx-auto border-b-1 border-lavenderGray relative z-30"
+        >
+          <!-- content -->
+          <div>
+            <p
+              class="text-base lg:text-lg font-normal text-skyBlue leading-normal tracking-wide text-center uppercase"
+            >
+              egyszerű Bérlési folyamat
+            </p>
+            <h2
+              class="max-w-[560px] mx-auto text-2xl lg:text-[44px] font-semibold text-deepGray leading-tight tracking-wide text-center pt-3 pb-4 lg:pt-6 lg:pb-4"
+            >
+              Automatizált <span class="text-skyBlue">Online Bérlés</span>
+            </h2>
+            <p
+              class="max-w-[780px] mx-auto text-base font-light text-mutedPurple leading-normal tracking-wide text-center"
+            >
+              Kényelmesen, otthonról vagy akár mobiljáról, bármikor bérelhet
+              raktárat online. A teljes folyamat automatizált, így a bérlést
+              gyorsan és egyszerűen intézheti.
+            </p>
+          </div>
+          <!-- cards -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 lg:gap-y-12 gap-y-9 mt-10 lg:mt-20 relative z-20"
+          >
+            <!-- item 1 -->
+            <div class="flex flex-col items-center justify-start gap-2">
+              <img
+                src="./img/online-01.svg"
+                alt=""
+                class="w-20 h-20 lg:w-24 lg:h-24"
+              />
+              <h3
+                class="text-xl lg:text-2xl font-medium text-deepGray tracking-wide text-center pt-3 pb-0 lg:pt-6 lg:pb-2"
+              >
+                Raktár kiválasztása
+              </h3>
+              <p
+                class="w-full lg:max-w-[388px] text-base font-light text-center text-mutedPurple"
+              >
+                Válassza ki a kívánt raktárat és tegye a kosárba. A kosár
+                oldalon a térkép segítségével láthatja, hogy melyik raktár az
+                Öné.
+              </p>
+            </div>
+            <!-- item 2 -->
+            <div class="flex flex-col items-center justify-start gap-2">
+              <img
+                src="./img/online-02.svg"
+                alt=""
+                class="w-20 h-20 lg:w-24 lg:h-24"
+              />
+              <h3
+                class="text-xl lg:text-2xl font-medium text-deepGray tracking-wide text-center pt-3 pb-0 lg:pt-6 lg:pb-2"
+              >
+                Fizetés és Regisztráció
+              </h3>
+              <p
+                class="w-full lg:max-w-[388px] text-base font-light text-center text-mutedPurple"
+              >
+                Töltse ki adatait, és fizesse ki online a megrendelést. Ezt
+                követően az összes szükséges dokumentumot elektronikusan
+                elküldjük a megadott e-mail címére. Ezzel egyidejűleg regisztrál
+                is a rendszerünkbe.
+              </p>
+            </div>
+            <!-- item 3 -->
+            <div class="flex flex-col items-center justify-start gap-2">
+              <img
+                src="./img/online-03.svg"
+                alt=""
+                class="w-20 h-20 lg:w-24 lg:h-24"
+              />
+              <h3
+                class="text-xl lg:text-2xl font-medium text-deepGray tracking-wide text-center pt-3 pb-0 lg:pt-6 lg:pb-2"
+              >
+                Hozzáférés
+              </h3>
+              <p
+                class="w-full lg:max-w-[324px] text-base font-light text-center text-mutedPurple"
+              >
+                A regisztráció és a sikeres fizetés után a felhasználói fiókba
+                belépve, azonnal használatba veheti a raktárát.
+              </p>
+            </div>
+            <!-- arrow left -->
+            <img
+              src="./img/directions.svg"
+              alt=""
+              class="absolute top-[8%] left-[23%] hidden lg:block lg:w-[20%]"
+            />
+            <!-- arrow right -->
+            <img
+              src="./img/directions.svg"
+              alt=""
+              class="absolute top-[8%] right-[23%] hidden lg:block lg:w-[20%]"
+            />
+          </div>
+          <!-- contact today -->
+          <div
+            class="p-5 lg:p-10 rounded-3xl shadow-lg flex flex-col md:flex-row justify-between items-center mt-10 lg:mt-24 lg:mb-0 bg-cta bg-right-bottom bg-no-repeat relative z-30 bg-white"
+          >
+            <h3
+              class="text-xl lg:text-3xl font-semibold text-skyBlue tracking-wide"
+            >
+              Ne habozzon, bérelje ki raktárát még ma!
+            </h3>
+            <button
+              class="w-full max-w-[260px] h-10 lg:h-14 flex justify-center items-center border-2 bg-skyBlue border-skyBlue rounded-[3px] text-base font-medium text-white hover:border-midnightBlue hover:text-white hover:bg-midnightBlue leading-normal tracking-wide gap-6 group mt-6 lg:mt-0"
+            >
+              Részletek
+              <svg
+                class="w-2.5 h-3.5"
+                viewBox="0 0 9 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="stroke-white group-hover:stroke-white stroke-2 stroke-rounded"
+                  d="M1.83325 13.5L7.83325 7.5L1.83325 1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- glow images -->
+        <div class="absolute left-0 -bottom-36">
+          <img src="./img/shadow6.svg" alt="" />
+        </div>
+        <div class="absolute right-0 bottom-0">
+          <img src="./img/showdow7.svg" alt="" />
+        </div>
+      </section>
+
+      <!-- online end -->
+      <!-- faq start -->
+      <section class="py-8 lg:py-24 relative" id="faq">
+        <div
+          class="px-5 max-w-[1280px] mx-auto border-b-1 border-lavenderGray relative z-30"
+        >
+          <!-- content -->
+          <div>
+            <p
+              class="text-base lg:text-lg font-normal text-skyBlue leading-normal tracking-wide text-center uppercase"
+            >
+              GYIK
+            </p>
+            <h2
+              class="max-w-[560px] mx-auto text-2xl lg:text-3xl font-semibold text-deepGray tracking-wide text-center pt-3 pb-4 lg:pt-6 lg:pb-4"
+            >
+              Gyakran Ismételt
+              <span class="text-skyBlue">Kérdések</span>
+            </h2>
+          </div>
+          <!-- accordian -->
+          <div
+            class="flex flex-col lg:flex-row justify-between gap-6 lg:gap-8 mt-10 lg:mt-20"
+          >
+            <!-- part left -->
+            <div class="w-full lg:w-1/2">
+              <dl class="flex flex-col gap-y-6">
+                <!-- item-01 -->
+                <div
+                  class="p-5 lg:px-8 lg:py-10 border-[1px] rounded-2xl shadow-md bg-white"
+                  id="faq-item"
+                >
+                  <dt>
+                    <!-- Expand/collapse question button -->
+                    <button
+                      type="button"
+                      class="flex w-full items-center justify-between text-left"
+                      aria-controls="faq-1"
+                      aria-expanded="false"
+                    >
+                      <span
+                        class="text-base lg:text-xl font-normal text-deepGray leading-normal"
+                        >Mennyi a minimum és maximum bérleti idő?</span
+                      >
+                      <span
+                        class="ml-6 flex justify-center items-center bg-pearlGray p-2 rounded-lg"
+                        id="icon-bg"
+                      >
+                        <!-- Icon when question is collapsed -->
+                        <svg
+                          class="h-6 w-6 stroke-mutedPurple"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 6v12m6-6H6"
+                          />
+                        </svg>
+                        <!-- Icon when question is expanded -->
+                        <svg
+                          class="hidden h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M18 12H6"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </dt>
+                  <dd class="mt-6 pr-12" id="faq-1" style="display: none">
+                    <p
+                      class="text-base lg:text-lg font-light leading-normal text-mutedPurple tracking-wide"
+                    >
+                      Többféle módon is leadhatod bérlési igényedet:<br />
+                      Válaszd ki a megfelelő méretű raktárat, helyezd a kosárba,
+                      majd add le a rendelést a webshopon keresztül. Ezt
+                      követően rövid időn belül felvesszük veled a kapcsolatot,
+                      és egyeztetjük a részleteket. Töltsd ki az oldalon
+                      található kapcsolatfelvételi űrlapot, és mi hamarosan
+                      jelentkezünk, hogy megbeszéljük a részleteket.
+                    </p>
+                  </dd>
+                </div>
+                <!-- item-02 -->
+                <div
+                  class="p-5 lg:px-8 lg:py-10 border-[1px] rounded-2xl shadow-md bg-white"
+                  id="faq-item"
+                >
+                  <dt>
+                    <!-- Expand/collapse question button -->
+                    <button
+                      type="button"
+                      class="flex w-full items-center justify-between text-left"
+                      aria-controls="faq-2"
+                      aria-expanded="false"
+                    >
+                      <span
+                        class="text-base lg:text-xl font-normal text-deepGray leading-normal"
+                        >Milyen adatok szükségesek a bérléshez?</span
+                      >
+                      <span
+                        class="ml-6 flex justify-center items-center bg-pearlGray p-2 rounded-lg"
+                        id="icon-bg"
+                      >
+                        <!-- Icon when question is collapsed -->
+                        <svg
+                          class="h-6 w-6 stroke-mutedPurple"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 6v12m6-6H6"
+                          />
+                        </svg>
+                        <!-- Icon when question is expanded -->
+                        <svg
+                          class="hidden h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M18 12H6"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </dt>
+                  <dd class="mt-6 pr-12" id="faq-2" style="display: none">
+                    <p
+                      class="text-base lg:text-lg font-light leading-normal text-mutedPurple tracking-wide"
+                    >
+                      Többféle módon is leadhatod bérlési igényedet:<br />
+                      Válaszd ki a megfelelő méretű raktárat, helyezd a kosárba,
+                      majd add le a rendelést a webshopon keresztül. Ezt
+                      követően rövid időn belül felvesszük veled a kapcsolatot,
+                      és egyeztetjük a részleteket. Töltsd ki az oldalon
+                      található kapcsolatfelvételi űrlapot, és mi hamarosan
+                      jelentkezünk, hogy megbeszéljük a részleteket.
+                    </p>
+                  </dd>
+                </div>
+                <!-- item-03 -->
+                <div
+                  class="p-5 lg:px-8 lg:py-10 border-[1px] rounded-2xl shadow-md bg-white"
+                  id="faq-item"
+                >
+                  <dt>
+                    <!-- Expand/collapse question button -->
+                    <button
+                      type="button"
+                      class="flex w-full items-center justify-between text-left"
+                      aria-controls="faq-3"
+                      aria-expanded="false"
+                    >
+                      <span
+                        class="text-base lg:text-xl font-normal text-deepGray leading-normal"
+                        >Kell kauciót fizetni?</span
+                      >
+                      <span
+                        class="ml-6 flex justify-center items-center bg-pearlGray p-2 rounded-lg"
+                        id="icon-bg"
+                      >
+                        <!-- Icon when question is collapsed -->
+                        <svg
+                          class="h-6 w-6 stroke-mutedPurple"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 6v12m6-6H6"
+                          />
+                        </svg>
+                        <!-- Icon when question is expanded -->
+                        <svg
+                          class="hidden h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M18 12H6"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </dt>
+                  <dd class="mt-6 pr-12" id="faq-3" style="display: none">
+                    <p
+                      class="text-base lg:text-lg font-light leading-normal text-mutedPurple tracking-wide"
+                    >
+                      Többféle módon is leadhatod bérlési igényedet:<br />
+                      Válaszd ki a megfelelő méretű raktárat, helyezd a kosárba,
+                      majd add le a rendelést a webshopon keresztül. Ezt
+                      követően rövid időn belül felvesszük veled a kapcsolatot,
+                      és egyeztetjük a részleteket. Töltsd ki az oldalon
+                      található kapcsolatfelvételi űrlapot, és mi hamarosan
+                      jelentkezünk, hogy megbeszéljük a részleteket.
+                    </p>
+                  </dd>
+                </div>
+
+                <!-- Add more questions as needed -->
+              </dl>
+            </div>
+            <!-- part right -->
+            <div class="w-full lg:w-1/2">
+              <dl class="flex flex-col gap-y-6">
+                <!-- item-04 -->
+                <div
+                  class="p-5 lg:px-8 lg:py-10 border-[1px] rounded-2xl shadow-md bg-white mt-0"
+                  id="faq-item"
+                >
+                  <dt>
+                    <!-- Expand/collapse question button -->
+                    <button
+                      type="button"
+                      class="flex w-full items-center justify-between text-left"
+                      aria-controls="faq-5"
+                      aria-expanded="false"
+                    >
+                      <span
+                        class="text-base lg:text-xl font-normal text-deepGray leading-normal"
+                        >Hogyan tudok bérelni?</span
+                      >
+                      <span
+                        class="ml-6 flex justify-center items-center bg-pearlGray p-2 rounded-lg"
+                        id="icon-bg"
+                      >
+                        <!-- Icon when question is collapsed -->
+                        <svg
+                          class="h-6 w-6 stroke-mutedPurple"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 6v12m6-6H6"
+                          />
+                        </svg>
+                        <!-- Icon when question is expanded -->
+                        <svg
+                          class="hidden h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M18 12H6"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </dt>
+                  <dd class="mt-6 pr-12" id="faq-5" style="display: none">
+                    <p
+                      class="text-base lg:text-lg font-light leading-normal text-mutedPurple tracking-wide"
+                    >
+                      Többféle módon is leadhatod bérlési igényedet:<br />
+                      Válaszd ki a megfelelő méretű raktárat, helyezd a kosárba,
+                      majd add le a rendelést a webshopon keresztül. Ezt
+                      követően rövid időn belül felvesszük veled a kapcsolatot,
+                      és egyeztetjük a részleteket. Töltsd ki az oldalon
+                      található kapcsolatfelvételi űrlapot, és mi hamarosan
+                      jelentkezünk, hogy megbeszéljük a részleteket.
+                    </p>
+                  </dd>
+                </div>
+                <!-- item-05 -->
+                <div
+                  class="p-5 lg:px-8 lg:py-10 border-[1px] rounded-2xl shadow-md bg-white"
+                  id="faq-item"
+                >
+                  <dt>
+                    <!-- Expand/collapse question button -->
+                    <button
+                      type="button"
+                      class="flex w-full items-center justify-between text-left"
+                      aria-controls="faq-4"
+                      aria-expanded="false"
+                    >
+                      <span
+                        class="text-base lg:text-xl font-normal text-deepGray leading-normal"
+                        >Mit nem tárolhatok a konténerekben?</span
+                      >
+                      <span
+                        class="ml-6 flex justify-center items-center bg-pearlGray p-2 rounded-lg"
+                        id="icon-bg"
+                      >
+                        <!-- Icon when question is collapsed -->
+                        <svg
+                          class="h-6 w-6 stroke-mutedPurple"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 6v12m6-6H6"
+                          />
+                        </svg>
+                        <!-- Icon when question is expanded -->
+                        <svg
+                          class="hidden h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M18 12H6"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </dt>
+                  <dd class="mt-6 pr-12" id="faq-4" style="display: none">
+                    <p
+                      class="text-base lg:text-lg font-light leading-normal text-mutedPurple tracking-wide"
+                    >
+                      Többféle módon is leadhatod bérlési igényedet:<br />
+                      Válaszd ki a megfelelő méretű raktárat, helyezd a kosárba,
+                      majd add le a rendelést a webshopon keresztül. Ezt
+                      követően rövid időn belül felvesszük veled a kapcsolatot,
+                      és egyeztetjük a részleteket. Töltsd ki az oldalon
+                      található kapcsolatfelvételi űrlapot, és mi hamarosan
+                      jelentkezünk, hogy megbeszéljük a részleteket.
+                    </p>
+                  </dd>
+                </div>
+                <!-- item-06 -->
+                <div
+                  class="p-5 lg:px-8 lg:py-10 border-[1px] rounded-2xl shadow-md bg-white"
+                  id="faq-item"
+                >
+                  <dt>
+                    <!-- Expand/collapse question button -->
+                    <button
+                      type="button"
+                      class="flex w-full items-center justify-between text-left"
+                      aria-controls="faq-6"
+                      aria-expanded="false"
+                    >
+                      <span
+                        class="text-base lg:text-xl font-normal text-deepGray leading-normal"
+                        >Milyen állapotúak a konténerek?</span
+                      >
+                      <span
+                        class="ml-6 flex justify-center items-center bg-pearlGray p-2 rounded-lg"
+                        id="icon-bg"
+                      >
+                        <!-- Icon when question is collapsed -->
+                        <svg
+                          class="h-6 w-6 stroke-mutedPurple"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 6v12m6-6H6"
+                          />
+                        </svg>
+                        <!-- Icon when question is expanded -->
+                        <svg
+                          class="hidden h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M18 12H6"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </dt>
+                  <dd class="mt-6 pr-12" id="faq-6" style="display: none">
+                    <p
+                      class="text-base lg:text-lg font-light leading-normal text-mutedPurple tracking-wide"
+                    >
+                      Többféle módon is leadhatod bérlési igényedet:<br />
+                      Válaszd ki a megfelelő méretű raktárat, helyezd a kosárba,
+                      majd add le a rendelést a webshopon keresztül. Ezt
+                      követően rövid időn belül felvesszük veled a kapcsolatot,
+                      és egyeztetjük a részleteket. Töltsd ki az oldalon
+                      található kapcsolatfelvételi űrlapot, és mi hamarosan
+                      jelentkezünk, hogy megbeszéljük a részleteket.
+                    </p>
+                  </dd>
+                </div>
+
+                <!-- Add more questions as needed -->
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute right-0 top-10">
+          <img src="./img/shadow4.svg" alt="" />
+        </div>
+      </section>
+      <!-- faq end -->
+      <!-- line start -->
+      <div
+        class="px-5 max-w-[1280px] mx-auto border-b-[1px] border-lavenderGray"
+      ></div>
+      <!-- line end -->
+      <!-- mobile start -->
+      <section class="pt-8 lg:pt-24" id="mobile">
+        <div
+          class="px-5 max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center"
+        >
+          <!-- top -->
+          <div class="w-full lg:w-1/2">
+            <div class="max-w-[455px] mx-auto space-y-6">
+              <p
+                class="text-base lg:text-lg font-normal text-skyBlue leading-normal tracking-wide text-center uppercase"
+              >
+                egyszerű belépés
+              </p>
+              <h2
+                class="max-w-[560px] mx-auto text-2xl lg:text-3xl font-semibold text-deepGray tracking-wide text-center"
+              >
+                Kapunyitás Mobillal
+              </h2>
+              <img src="./img/mobile-icon.svg" alt="" class="mx-auto" />
+              <div class="space-y-2">
+                <p class="text-lg font-normal text-center text-mutedPurple">
+                  Minden regisztrált bérlőnk számára 0-24 órában elérhető a
+                  raktár. A felhasználói fiókba bejelentkezve a Kapunyitás gomb
+                  segítségével egyszerűen nyithatja a kaput.
+                </p>
+                <p class="text-base font-light text-center text-mutedPurple">
+                  Ha segítségre lenne szüksége, forduljon bizalommal kiemelt
+                  ügyfélszolgálatunkhoz.
+                </p>
+              </div>
+              <div class="flex flex-col md:flex-row gap-3 md:gap-6 pt-4">
+                <a
+                  href="#"
+                  class="w-full md:w-[210px] h-14 text-base md:text-lg text-white font-semibold leading-6 tracking-wide bg-skyBlue border-[#257BEB] border-2 rounded-[3px] flex items-center justify-center hover:text-white hover:bg-[#1E478A] hover:border-[#1E478A]"
+                  >Belépés</a
+                >
+                <a
+                  href="#"
+                  class="w-full md:w-[210px] h-14 text-base md:text-lg text-skyBlue font-semibold leading-6 tracking-wide bg-transparent border-lavenderGray border-2 rounded-[3px] flex items-center justify-center hover:text-white hover:bg-skyBlue"
+                  >Ügyfélszolgálat</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- bottom -->
+          <div class="w-full lg:w-1/2 pt-12 lg:pt-0">
+            <img src="./img/mobile.webp" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- mobile end -->
+      <!-- house start -->
+      <section class="bg-midnightBlue" id="house">
+        <div
+          class="px-5 max-w-[1280px] mx-auto grid grid-cols-2 lg:grid-cols-6 gap-6 py-8 justify-items-center lg:justify-items-start items-start"
+        >
+          <!-- item-01 -->
+          <div
+            class="flex flex-col lg:flex-row justify-center items-center gap-4 max-w-[164px]"
+          >
+            <img src="./img/house-item-01.svg" alt="Bútorok" />
+            <h3
+              class="text-base font-bold text-white text-center lg:text-start"
+            >
+              Bútorok
+            </h3>
+          </div>
+          <!-- item-02 -->
+          <div
+            class="flex flex-col lg:flex-row justify-center items-center gap-4 max-w-[164px]"
+          >
+            <img src="./img/house-item-02.svg" alt="Kisgépek" />
+            <h3
+              class="text-base font-bold text-white text-center lg:text-start"
+            >
+              Kisgépek
+            </h3>
+          </div>
+          <!-- item-03 -->
+          <div
+            class="flex flex-col lg:flex-row justify-center items-center gap-4 max-w-[164px]"
+          >
+            <img src="./img/house-item-03.svg" alt="Háztartási eszközök" />
+            <h3
+              class="text-base font-bold text-white text-center lg:text-start"
+            >
+              Háztartási eszközök
+            </h3>
+          </div>
+          <!-- item-04 -->
+          <div
+            class="flex flex-col lg:flex-row justify-center items-center gap-4 max-w-[164px]"
+          >
+            <img src="./img/house-item-04.svg" alt="Ingóságok" />
+            <h3
+              class="text-base font-bold text-white text-center lg:text-start"
+            >
+              Ingóságok
+            </h3>
+          </div>
+          <!-- item-05 -->
+          <div
+            class="flex flex-col lg:flex-row justify-center items-center gap-4 max-w-[164px]"
+          >
+            <img src="./img/house-item-05.svg" alt="Árukészlet" />
+            <h3
+              class="text-base font-bold text-white text-center lg:text-start"
+            >
+              Árukészlet
+            </h3>
+          </div>
+          <!-- item-06 -->
+          <div
+            class="flex flex-col lg:flex-row justify-center items-center gap-4 max-w-[164px]"
+          >
+            <img src="./img/house-item-06.svg" alt="Egyéb" />
+            <h3
+              class="text-base font-bold text-white text-center lg:text-start"
+            >
+              Egyéb
+            </h3>
+          </div>
+        </div>
+      </section>
+      <!-- house end -->
+      <!-- map start -->
+      <section class="w-full" id="map">
+        <div>
+          <img
+            src="./img/map-demo.svg"
+            alt=""
+            class="w-full min-h-[250px] lg:min-h-[300px] object-cover object-center"
+          />
+        </div>
+      </section>
+      <!-- map end -->
+      <!-- contact start -->
+      <section class="py-8 lg:py-24 relative" id="contact">
+        <div
+          class="px-5 max-w-[1280px] mx-auto border-b-1 border-lavenderGray relative z-20"
+        >
+          <!-- content -->
+          <div>
+            <p
+              class="text-base lg:text-lg font-normal text-skyBlue leading-normal tracking-wide text-center uppercase"
+            >
+              Kapcsolat
+            </p>
+            <h2
+              class="max-w-[560px] mx-auto text-2xl lg:text-3xl font-semibold text-deepGray tracking-wide text-center pt-3 pb-4 lg:pt-6 lg:pb-4"
+            >
+              Töltse ki az
+              <span class="text-skyBlue">Űrlapot!</span>
+            </h2>
+            <p
+              class="max-w-[750px] mx-auto text-base font-light text-mutedPurple leading-normal tracking-wide text-center"
+            >
+              Ha nem biztos benne, hogy milyen méretű raktárat szeretne
+              kibérelni vagy konténert vásárolna, írja meg nekünk és segítünk.
+            </p>
+          </div>
+          <!-- Tab Navigation -->
+          <div
+            class="flex justify-center items-center mt-10"
+            id="tab-navigation-1"
+          >
+            <div class="border-2 border-lavenderGray rounded-lg gap-0">
+              <button
+                class="text-base text-white bg-skyBlue font-bold text-center border-lavenderGray focus:outline-none transition duration-300 active-tab lg:min-w-[161px] min-h-[40px] lg:min-h-[46px] rounded-l-md px-7"
+                data-tab="tab1-content"
+              >
+                Magánszemély
+              </button>
+              <button
+                class="text-base text-mutedPurple bg-pearlGray font-bold text-center border-lavenderGray focus:outline-none transition duration-300 lg:min-w-[160px] min-h-[40px] lg:min-h-[46px] rounded-r-md px-7"
+                data-tab="tab2-content"
+              >
+                Cég
+              </button>
+            </div>
+          </div>
+          <!-- tab content -->
+          <div class="mt-8">
+            <div id="tab1-content" class="tab-content">
+              <div
+                class="flex flex-col lg:flex-row justify-between items-center gap-9 lg:gap-10"
+              >
+                <div class="w-full lg:w-1/3 space-y-4 lg:space-y-6">
+                  <!-- item 01 -->
+                  <div
+                    class="flex justify-start items-center space-x-[18px] bg-white p-3 lg:p-6 rounded-lg max-h-[104px]"
+                  >
+                    <img src="./img/phone-contact.svg" alt="" />
+                    <div class="space-y-1">
+                      <h3 class="text-base text-mutedPurple font-light">
+                        Telefonszám
+                      </h3>
+                      <a
+                        href="tel:+36308830991"
+                        class="text-base text-deepGray hover:text-midnightBlue font-medium"
+                        >+36 30 883 0991</a
+                      >
+                    </div>
+                  </div>
+                  <!-- item 02 -->
+                  <div
+                    class="flex justify-start items-center space-x-[18px] bg-white p-3 lg:p-6 rounded-lg max-h-[104px]"
+                  >
+                    <img src="./img/email.svg" alt="" />
+                    <div class="space-y-1">
+                      <h3 class="text-base text-mutedPurple font-light">
+                        Email cím
+                      </h3>
+                      <a
+                        href="mailto:berles@biztosraktar.hu"
+                        class="text-base text-deepGray hover:text-midnightBlue font-medium"
+                        >berles@biztosraktar.hu</a
+                      >
+                    </div>
+                  </div>
+                  <!-- item 03 -->
+                  <div
+                    class="flex justify-start items-center space-x-[18px] bg-white p-3 lg:p-6 rounded-lg max-h-[104px]"
+                  >
+                    <img src="./img/locations.svg" alt="" />
+                    <div class="space-y-1">
+                      <h3 class="text-base text-mutedPurple font-light">
+                        Központi raktár címe
+                      </h3>
+                      <a
+                        href="tel:+36308830991"
+                        class="text-base text-deepGray hover:text-midnightBlue font-medium"
+                        >Budapest, Keresztúri út 86/CHU-1106</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full lg:w-2/3">
+                  <form action="">
+                    <div
+                      class="grid grid-cols-1 gap-4 lg:gap-x-6 lg:gap-y-6 md:grid-cols-6"
+                    >
+                      <div class="md:col-span-3">
+                        <div class="mt-2">
+                          <input
+                            type="text"
+                            name="name"
+                            placeholder="Teljes név / Cégnév"
+                            id="first-name"
+                            autocomplete="given-name"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="md:col-span-3">
+                        <div class="mt-2">
+                          <input
+                            type="mail"
+                            name="email"
+                            placeholder="Email cím"
+                            id="email"
+                            autocomplete="email"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+                      <div class="md:col-span-3">
+                        <div class="mt-2">
+                          <input
+                            type="tel"
+                            name="phone"
+                            placeholder="Telefonszám"
+                            id="phone"
+                            autocomplete="phone"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+                      <div class="md:col-span-3">
+                        <div class="mt-2">
+                          <select
+                            id="containerRental"
+                            name="containerRental"
+                            autocomplete="container-rental"
+                            aria-placeholder="Konténer bérlés"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          >
+                            <option>Konténer bérlés</option>
+                            <option>Konténer bérlés</option>
+                            <option>Konténer bérlés</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-span-full">
+                        <div class="mt-2">
+                          <textarea
+                            id="about"
+                            name="about"
+                            placeholder="Üzenet"
+                            rows="6"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-span-full">
+                        <button
+                          class="w-full md:w-auto px-[72px] h-12 lg:h-14 bg-skyBlue text-white rounded-[3px] text-lg font-semibold leading-normal tracking-wide hover:bg-midnightBlue float-right"
+                        >
+                          Küldés
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div id="tab2-content" class="tab-content hidden">
+              <div
+                class="flex flex-col lg:flex-row justify-between items-center gap-9 lg:gap-10"
+              >
+                <div class="w-full lg:w-1/3 space-y-4 lg:space-y-6">
+                  <!-- item 01 -->
+                  <div
+                    class="flex justify-start items-center space-x-[18px] bg-white p-3 lg:p-6 rounded-lg max-h-[104px]"
+                  >
+                    <img src="./img/phone-contact.svg" alt="" />
+                    <div class="space-y-1">
+                      <h3 class="text-base text-mutedPurple font-light">
+                        Telefonszám
+                      </h3>
+                      <a
+                        href="tel:+36308830991"
+                        class="text-base text-deepGray hover:text-midnightBlue font-medium"
+                        >+36 30 883 0991</a
+                      >
+                    </div>
+                  </div>
+                  <!-- item 02 -->
+                  <div
+                    class="flex justify-start items-center space-x-[18px] bg-white p-3 lg:p-6 rounded-lg max-h-[104px]"
+                  >
+                    <img src="./img/email.svg" alt="" />
+                    <div class="space-y-1">
+                      <h3 class="text-base text-mutedPurple font-light">
+                        Email cím
+                      </h3>
+                      <a
+                        href="mailto:berles@biztosraktar.hu"
+                        class="text-base text-deepGray hover:text-midnightBlue font-medium"
+                        >berles@biztosraktar.hu</a
+                      >
+                    </div>
+                  </div>
+                  <!-- item 03 -->
+                  <div
+                    class="flex justify-start items-center space-x-[18px] bg-white p-3 lg:p-6 rounded-lg max-h-[104px]"
+                  >
+                    <img src="./img/locations.svg" alt="" />
+                    <div class="space-y-1">
+                      <h3 class="text-base text-mutedPurple font-light">
+                        Központi raktár címe
+                      </h3>
+                      <a
+                        href="tel:+36308830991"
+                        class="text-base text-deepGray hover:text-midnightBlue font-medium"
+                        >Budapest, Keresztúri út 86/CHU-1106</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full lg:w-2/3">
+                  <form action="">
+                    <div
+                      class="grid grid-cols-1 gap-4 lg:gap-x-6 lg:gap-y-6 md:grid-cols-6"
+                    >
+                      <div class="md:col-span-3">
+                        <div class="mt-2">
+                          <input
+                            type="text"
+                            name="name"
+                            placeholder="Teljes név / Cégnév"
+                            id="first-name"
+                            autocomplete="given-name"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="md:col-span-3">
+                        <div class="mt-2">
+                          <input
+                            type="mail"
+                            name="email"
+                            placeholder="Email cím"
+                            id="email"
+                            autocomplete="email"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+                      <div class="md:col-span-3">
+                        <div class="mt-2">
+                          <input
+                            type="tel"
+                            name="phone"
+                            placeholder="Telefonszám"
+                            id="phone"
+                            autocomplete="phone"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+                      <div class="md:col-span-3">
+                        <div class="mt-2">
+                          <select
+                            id="containerRental"
+                            name="containerRental"
+                            autocomplete="container-rental"
+                            aria-placeholder="Konténer bérlés"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          >
+                            <option>Konténer bérlés</option>
+                            <option>Konténer bérlés</option>
+                            <option>Konténer bérlés</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-span-full">
+                        <div class="mt-2">
+                          <textarea
+                            id="about"
+                            name="about"
+                            placeholder="Üzenet"
+                            rows="6"
+                            class="block w-full rounded-lg border border-lavenderGray px-6 py-4 text-deepGray ring-1 ring-inset ring-gray-300 placeholder:text-mutedPurple text-base font-light focus:ring-1 focus:ring-inset focus:ring-midnightBlue sm:text-sm sm:leading-6"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-span-full">
+                        <button
+                          class="w-full md:w-auto px-[72px] h-12 lg:h-14 bg-skyBlue text-white rounded-[3px] text-lg font-semibold leading-normal tracking-wide hover:bg-midnightBlue float-right"
+                        >
+                          Küldés
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute left-0 -bottom-20">
+          <img src="./img/shadow2.svg" alt="" />
+        </div>
+        <div class="absolute right-0 top-10">
+          <img src="./img/shadow3.svg" alt="" />
+        </div>
+      </section>
+      <!-- contact end -->
+        <div class="w-full h-[1px] bg-lightLavender"></div>
+      <section class="py-10 lg:pt-20 lg:pb-16" aria-colspan="">
+        <div
+          class="px-5 max-w-[1280px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-0"
+        >
+          <div class="w-full md:max-w-[240px]">
+            <!-- Logo -->
+            <a href="./index.html" class="logo-container">
+              <img
+                src="./img/Logo.svg"
+                alt="Logo"
+                class="default-logo w-[60%] lg:w-[70%] xl:w-full"
+              />
+              <img
+                src="./img/Logo-hover.svg"
+                alt="Hover Logo"
+                class="hover-logo w-[60%] lg:w-[70%] xl:w-full"
+              />
+            </a>
+          </div>
+          <!-- content -->
+          <p
+            class="max-w-[526px] text-base font-light text-mutedPurple text-center lg:text-start"
+          >
+            Különböző méretű, biztonságos és 0-24 hozzáférhető
+            raktárkonténereket kínálunk bérbe, akár egyedi igények alapján is,
+            központi helyen, rakodási segítséggel.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- main end -->
+    <!-- footer start -->
+    <footer class="border-t-[1px] border-lightLavender">
+      <!-- top -->
+      <div
+        class="max-w-[1280px] px-5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 lg:gap-6 py-10 lg:py-20 border-b-[1px] border-softLilac"
+      >
+        <!-- Column 1 -->
+        <ul class="space-y-4">
+          <li class="pb-0 lg:pb-6">
+            <p class="text-deepGray text-lg lg:text-xl font-bold">Főoldal</p>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >Raktár Bérlés</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >Bérleti díjak</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >GYIK</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >Kapcsolat</a
+            >
+          </li>
+        </ul>
+
+        <!-- Column 2 -->
+        <ul class="space-y-4">
+          <li class="pb-0 lg:pb-6">
+            <p class="text-deepGray text-lg lg:text-xl font-bold">
+              Oldal információk
+            </p>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >ÁSZF</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >Cookie tájékoztató</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >Fizetési információk</a
+            >
+          </li>
+        </ul>
+
+        <!-- Column 3 -->
+        <ul class="space-y-4">
+          <li class="pb-0 lg:pb-6">
+            <p class="text-deepGray text-lg lg:text-xl font-bold">Letöltések</p>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >iOS</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-dmSans text-base lg:text-lg text-mutedPurple hover:text-skyBlue inline-block font-light"
+              >Android</a
+            >
+          </li>
+        </ul>
+
+        <!-- Column 4 (Image) -->
+        <div class="flex justify-center md:justify-start">
+          <a href="#"><img src="./img/footer-container.png" alt="" /></a>
+        </div>
+      </div>
+
+      <!-- bottom -->
+      <div
+        class="max-w-[1280px] px-5 mx-auto flex flex-col lg:flex-row lg:justify-between justify-center lg:items-start item-start py-8 lg:py-20 border-b-[1px] border-softLilac gap-4"
+      >
+        <p
+          class="text-mutedPurple text-sm lg:text-lg font-light text-center lg:text-start"
+        >
+          Copyright © 2024 Üzemeltető |
+          <a href="#" class="hover:text-midnightBlue">Minden jog fenntartva.</a>
+        </p>
+        <p
+          class="text-mutedPurple text-sm lg:text-lg font-light flex gap-5 text-center lg:text-end mx-auto lg:mx-0"
+        >
+          Készítette: <a href="#"><img src="./img/netjpar.svg" alt="" /></a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- divider start -->
+    <img src="./img/divider.png" alt="" class="w-full min-h-7 lg:min-h-16" />
+    <!-- divider end -->
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
